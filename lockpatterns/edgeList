@@ -1,0 +1,10 @@
+public class edgeList{
+	String source;
+	String target;
+
+	edgeList(String source, String target){
+		this.source = source;
+		this.target = target;
+	}
+
+}

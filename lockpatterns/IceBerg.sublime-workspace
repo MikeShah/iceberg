@@ -1,0 +1,1369 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"soot",
+				"sootOutputDirectory"
+			],
+			[
+				"creat",
+				"createDirectory"
+			],
+			[
+				"allo",
+				"allocations"
+			],
+			[
+				"add",
+				"addItem"
+			],
+			[
+				"found",
+				"foundEdge"
+			],
+			[
+				"graph",
+				"graphPath2"
+			],
+			[
+				"metho",
+				"methodQueue"
+			],
+			[
+				"ed",
+				"edgeList"
+			],
+			[
+				"targe",
+				"targets"
+			],
+			[
+				"edge",
+				"edgeList"
+			],
+			[
+				"tar",
+				"targets"
+			],
+			[
+				"edg",
+				"edgeList"
+			],
+			[
+				"En",
+				"enqueue"
+			],
+			[
+				"proj",
+				"ProjectController"
+			],
+			[
+				"getBody",
+				"getMethodBody"
+			],
+			[
+				"inc",
+				"incrementCalls"
+			],
+			[
+				"me",
+				"methodExists"
+			],
+			[
+				"methodin",
+				"methodInfoNames"
+			],
+			[
+				"method",
+				"methodInfo"
+			],
+			[
+				"dotG",
+				"dotGraphEdge"
+			],
+			[
+				"prin",
+				"printSequence"
+			],
+			[
+				"corr",
+				"correctInput"
+			],
+			[
+				"user",
+				"userInput"
+			],
+			[
+				"max",
+				"maximum"
+			],
+			[
+				"csv",
+				"csvFeatures"
+			],
+			[
+				"wr",
+				"write"
+			],
+			[
+				"wri",
+				"writerCSVSummary"
+			],
+			[
+				"state",
+				"statementTypes"
+			],
+			[
+				"row",
+				"rowB"
+			],
+			[
+				"tot",
+				"totalLines"
+			],
+			[
+				"summ",
+				"SummaryFile"
+			],
+			[
+				"se",
+				"searchDirectory"
+			],
+			[
+				"target",
+				"target"
+			],
+			[
+				"que",
+				"queueItem"
+			],
+			[
+				"queu",
+				"queueItem"
+			],
+			[
+				"item",
+				"itemCount"
+			],
+			[
+				"en",
+				"enqueue"
+			],
+			[
+				"de",
+				"dequeue"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"dump",
+				"sootDump"
+			],
+			[
+				"sootclassp",
+				"sootsClassPath"
+			],
+			[
+				"sootCl",
+				"sootsClassPath"
+			],
+			[
+				"soo",
+				"soot-trunk2"
+			],
+			[
+				"Body",
+				"BodyTransformer"
+			],
+			[
+				"Pack",
+				"PackManager"
+			],
+			[
+				"D",
+				"SemaphoreDemo"
+			],
+			[
+				"J",
+				"JAVACOMPILE"
+			],
+			[
+				"jar",
+				"jar_classes"
+			],
+			[
+				"C",
+				"CREATEJAR"
+			],
+			[
+				"trans",
+				"transformations"
+			],
+			[
+				"nor",
+				"normalVector"
+			],
+			[
+				"face",
+				"faceCount"
+			],
+			[
+				"GL_T",
+				"GL_TEXTURE_2D"
+			],
+			[
+				"gl",
+				"glDisable"
+			],
+			[
+				"eyep",
+				"eyePointP"
+			],
+			[
+				"dra",
+				"drawRay"
+			],
+			[
+				"draw",
+				"drawRayFunc"
+			],
+			[
+				"mouse",
+				"mouseY"
+			],
+			[
+				"ray",
+				"ray_direction"
+			],
+			[
+				"scre",
+				"screen_click"
+			],
+			[
+				"win",
+				"windowYSize"
+			],
+			[
+				"windo",
+				"windowXSize"
+			],
+			[
+				"eye",
+				"eyePointP"
+			],
+			[
+				"cast",
+				"castRay"
+			],
+			[
+				"wind",
+				"windowXSize"
+			],
+			[
+				"window",
+				"windowYSize"
+			],
+			[
+				"blend",
+				"blendTextureID"
+			],
+			[
+				"load",
+				"loadTexture"
+			],
+			[
+				"set",
+				"setTexture"
+			],
+			[
+				"GL_L",
+				"GL_LIGHTING"
+			],
+			[
+				"glE",
+				"glEnable"
+			],
+			[
+				"VE",
+				"VERTICES"
+			],
+			[
+				"Vertic",
+				"VERTICES"
+			],
+			[
+				"tex",
+				"textureCoordX_delta"
+			],
+			[
+				"m_",
+				"m_segmentsX"
+			],
+			[
+				"m_seg",
+				"m_segmentsY"
+			],
+			[
+				"basete",
+				"baseTextureID"
+			],
+			[
+				"base",
+				"baseTexture"
+			],
+			[
+				"blen",
+				"blendTexture"
+			],
+			[
+				"pp",
+				"ppmFile"
+			],
+			[
+				"line",
+				"lineNumber"
+			],
+			[
+				"synch",
+				"synchronizedMethodsCount"
+			],
+			[
+				"constu",
+				"constructorsMethodCount"
+			],
+			[
+				"sync",
+				"synchronizedMethodCount"
+			],
+			[
+				"numb",
+				"numberOfMethods"
+			],
+			[
+				"isConc",
+				"isConstructor"
+			],
+			[
+				"stt",
+				"statement"
+			],
+			[
+				"res",
+				"resolution"
+			],
+			[
+				"coa",
+				"coasterCar4Position"
+			],
+			[
+				"coas",
+				"coasterCar3Position"
+			],
+			[
+				"spli",
+				"splineSize"
+			],
+			[
+				"coast",
+				"coasterPosition"
+			],
+			[
+				"comp",
+				"computed_x_y_z"
+			],
+			[
+				"random",
+				"randomWidth"
+			],
+			[
+				"render",
+				"renderRollerCoaster"
+			],
+			[
+				"spl",
+				"splineSize"
+			],
+			[
+				"resol",
+				"resolution_spinner"
+			],
+			[
+				"rand",
+				"randomWidth"
+			],
+			[
+				"contro",
+				"controlPoint"
+			],
+			[
+				"qpri",
+				"qprime"
+			],
+			[
+				"q",
+				"q"
+			],
+			[
+				"Vg",
+				"Vg_y"
+			],
+			[
+				"Vs",
+				"Vs_y"
+			],
+			[
+				"V",
+				"Vg_y"
+			],
+			[
+				"vs",
+				"Vs_y"
+			],
+			[
+				"qprim",
+				"qprime2"
+			],
+			[
+				"con",
+				"controlPoints"
+			],
+			[
+				"interp",
+				"interpolatedPoints"
+			],
+			[
+				"contr",
+				"controlPoints"
+			],
+			[
+				"control",
+				"controlPoints"
+			],
+			[
+				"cont",
+				"controlPoint"
+			],
+			[
+				"tem",
+				"tempV2"
+			],
+			[
+				"te",
+				"tempV"
+			],
+			[
+				"temp",
+				"tempP"
+			],
+			[
+				"get",
+				"getZPosition"
+			],
+			[
+				"rot",
+				"rotate_around"
+			],
+			[
+				"ro",
+				"rotate_around"
+			],
+			[
+				"vi",
+				"view_pos"
+			],
+			[
+				"OBJE",
+				"objectLinkedList"
+			],
+			[
+				"main",
+				"mainscript"
+			],
+			[
+				"an",
+				"animation"
+			],
+			[
+				"scri",
+				"scriptEngine"
+			],
+			[
+				"ver",
+				"vertexList"
+			],
+			[
+				"vertex",
+				"vertexList"
+			],
+			[
+				"star",
+				"startScene"
+			],
+			[
+				"camera",
+				"camera1"
+			],
+			[
+				"start",
+				"startTheScene"
+			],
+			[
+				"rend",
+				"renderWireFrame"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "MyMain.java",
+			"settings":
+			{
+				"buffer_size": 1997,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ProjectController.java",
+			"settings":
+			{
+				"buffer_size": 30131,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "edgeList.java",
+			"settings":
+			{
+				"buffer_size": 3105,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "CriticalSectionBlock.java",
+			"settings":
+			{
+				"buffer_size": 48248,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/*  =================== File Information =================\n    File Name: buildCFG.java\n    Description:\n    Author: Michael Shah (Michael.Shah@tufts.edu)\n    Last Modified: 1/21/15\n\n    Purpose: \n    ===================================================== */\n\npackage lockpatterns;\n\n\nimport java.util.*;\nimport java.io.*;\n\n// Import all of the libraries from the soot library.\nimport soot.*;\nimport soot.util.Chain;\nimport soot.jimple.*;\nimport soot.jimple.toolkits.pointer.*;\nimport soot.jimple.toolkits.thread.ThreadLocalObjectsAnalysis;\nimport soot.jimple.toolkits.thread.synchronization.*;\nimport soot.jimple.toolkits.thread.mhp.MhpTester;\nimport soot.jimple.toolkits.thread.mhp.SynchObliviousMhpAnalysis;\nimport soot.jimple.toolkits.callgraph.*;\nimport soot.jimple.toolkits.infoflow.*;\nimport soot.jimple.spark.pag.*;\nimport soot.jimple.spark.sets.*;\nimport soot.toolkits.scalar.*;\nimport soot.toolkits.graph.*;\n\n// Be able to set some of the command line options from within our source.\nimport soot.options.Options;\n// Be able to Tag objects\nimport soot.tagkit.*;\n\n// Be able to output a DOT file (specifically for the callgraph\nimport soot.util.dot.*;\nimport soot.util.*;\n\n/*  ============== buildCFG ==============\n	Purpose: 	Useful for building a Control Flow Graph\n	Notes:\n	Example usage: \n	1.)\n	==================================== */ \npublic class buildCFG{\n\n	/*	Name: buildCFG\n		Description: \n		Purpose:\n	*/\n    // Builds a Control Flow Graph (CFG) for a critical section.\n	// It will start building from the method provided.	\n    //\n    public void buildCFG(SootMethod methodbody){\n        UnitGraph g = new ExceptionalUnitGraph(methodbody.getActiveBody());\n        G.v().out.println(\"BUILDING CONTROL FLOW GRAPH FOR METHOD\"+methodbody.toString());\n    }\n\n}\n\n\n\n",
+			"file": "buildCFG.java",
+			"file_size": 1863,
+			"file_write_time": 1426711288000000,
+			"settings":
+			{
+				"buffer_size": 1774,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "IceBergFlowAnalysis.java",
+			"settings":
+			{
+				"buffer_size": 1965,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "CriticalSectionItem.java",
+			"settings":
+			{
+				"buffer_size": 4779,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "methodInfo.java",
+			"settings":
+			{
+				"buffer_size": 1389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/testScript",
+			"settings":
+			{
+				"buffer_size": 9661,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/TableBuilder.py",
+			"settings":
+			{
+				"buffer_size": 2873,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#Run with bash sunflowBuildScript\n\n# Help \n# java -Xmx2g -cp \"sootclasses-2.5.0.jar\":\"polyglotclasses-1.3.5.jar\":\"jasminclasses-2.5.0.jar\":. soot.Main -help\n\n# original working command line\n# java -Xmx2g -cp \"../benchmarks/Sunflow/sunflow/classes/\":\"../benchmarks/Sunflow/sunflow/classes/org/\":\"../benchmarks/Sunflow/sunflow/classes/org/sunflow/\":\"../benchmarks/Sunflow/sunflow/janino.jar\":\"sootclasses-2.5.0.jar\":\"jasminclasses-2.5.0.jar\":\"polyglotclasses-1.3.5.jar\":. lockpatterns.MyMain  -print-tags-in-output -time -w -debug -keep-line-number -f J -process-dir \"../benchmarks/Sunflow/sunflow/classes/\"\n\n#Recompile the project if necessary\nSOOTVERSION=\"sootclasses-2.5.0.jar\"\nBUILD=\"Javac -classpath /lockpatterns:/jasminclasses-2.5.0.jar:${SOOTVERSION}: ./lockpatterns/*.java\"\necho \"Compiling: ${BUILD}\"\neval ${BUILD}\n\n#java -cp <soot> soot.Main -cp .:/home/user/ebodde/bin/sun-jdk1.6.0_05/jre/lib/rt.jar A B\n\nCOMPILER=java\nCOMPILER_FLAGS=\"-Xmx2g\"\nJAVACLASSPATH=\"-cp .:\\\"/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/jre/lib/rt.jar\\\":\\\"/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/jre/lib/jce.jar\\\"\"\nSOOTFLAGS=\"-w -f J -soot-class-path \\\"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/benchmarks/Sunflow/sunflow/\\\" -process-dir \\\"/Users/michaelshah/Dropbox/school/\\\"Graduate School\\\"/Research/Soot/benchmarks/Sunflow/sunflow/\\\"\"\n\n\n\nCOMMAND=\"nice -n 19 ${COMPILER} ${COMPILER_FLAGS} ${JAVACLASSPATH}\\\"${SOOTVERSION}\\\":\\\"jasminclasses-2.5.0.jar\\\":\\\"polyglotclasses-1.3.5.jar\\\":. lockpatterns.MyMain -criticalOutput testetsets ${SOOTFLAGS}\" \necho \"runing: ${COMMAND}\"\neval ${COMMAND}\n",
+			"file": "/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/sunflowBuildScript",
+			"file_size": 1640,
+			"file_write_time": 1412278696000000,
+			"settings":
+			{
+				"buffer_size": 1639,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Processing/Processing.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"syntax",
+				"Set Syntax: Processing"
+			],
+			[
+				"build",
+				"Build: Build"
+			],
+			[
+				"process",
+				"Set Syntax: Processing"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/lockpatterns/IcebergFlorAnalysis.java",
+		"/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/testScript",
+		"/Users/michaelshah/Dropbox/Lynda/Unity4.3_Essential2D/Tutorial/SuperJetroid2DDemo/Assets/Scripts/Player.cs",
+		"/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/TableBuilder.py",
+		"/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/lockpatterns/NewStaticLock.java",
+		"/Users/michaelshah/Dropbox/Career/BoundedQueue/bounded_queue.h",
+		"/Users/michaelshah/Dropbox/Career/BoundedQueue/main.cpp",
+		"/Users/michaelshah/Dropbox/Career/BoundedQueue/readme",
+		"/Users/michaelshah/Dropbox/c++11_book/DataStructures/test.cpp",
+		"/Users/michaelshah/Dropbox/Career/BoundedQueue/bounded_queue.cpp",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/GenerateJar",
+		"/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/lockpatterns/MyMain.java",
+		"/Users/michaelshah/Dropbox/OpenGL/OpenFrameworks/OSX/of_v0.8.4_osx_release/apps/myApps/RadioStreaming/src/testApp.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/Assignment4.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/SceneData.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/Camera.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/Algebra.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/Shape.h",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSection.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionGroup.java",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/ppm.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/ppm.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/Algebra.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/object.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/object.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/6/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/main.cpp",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionBlock.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/SynchronizedRegionFinder.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/SynchronizedRegion.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/StrayRWFinder.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/NewStaticLock.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/LockAllocator.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/LockAllocationBodyTransformer.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/LockableReferenceAnalysis.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionInterferenceGraph.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionDataDependency.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionVisibleEdgesPred.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/DeadlockAvoidanceEdge.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/DeadlockDetector.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionAwareSideEffectAnalysis.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/SynchronizedRegionFlowPair.java",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/spline.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/spline.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment3-SceneView/Mac/Assignment3.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment3-SceneView/Mac/shapes/Shape.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/movieCamera.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/3/movieCamera.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/movieCamera.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/entity.cpp",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/HTML5 Game Designer/index.html",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/HTML5 Game Designer/mainscript.js",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/HTML5 Game Designer/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/object.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/object.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/movieCamera.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/movieCamera.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/blender.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/blender.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/02/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/02/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/04/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/04/solarSystem.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/04/solarSystem.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics/InClass/work-in-progress-solution_01/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics/InClass/work-in-progress-solution_01/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics/InClass/work-in-progress-solution_01/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics/InClass/work-in-progress-solution_01/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/01/dragon_vrip_res4.ply",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/MyMain.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/edgeList.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionItem.java",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/01/bun_zipper_res4.ply",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Example1.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Algebra.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Torus.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Shape.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Torus copy.h",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/ModelLoader/main.cpp",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/ModelLoader/model.h",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/ModelLoader/model.cpp",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionVisibleEdgesPred.class",
+		"/Users/michaelshah/Dropbox/Algorithms/graph/graph.cpp",
+		"/Users/michaelshah/Dropbox/Algorithms/mergesort/mergesort.cpp",
+		"/Users/michaelshah/Dropbox/Algorithms/bst/bst.h",
+		"/Users/michaelshah/Dropbox/Algorithms/bst/bst.cpp",
+		"/Users/michaelshah/Dropbox/Algorithms/bst/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/factory.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/factory.h",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/Package.h",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/AssemblyLine.cpp"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sootOutputDirectory",
+			"SootOutputDirectory",
+			"sootOutputDirectory",
+			"createDirectory",
+			"director",
+			"createDirectory",
+			"directoryName",
+			"createDirectory",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"totalAllocations",
+			"Allocations",
+			"allocations",
+			"javaLibraryMethodsCount",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"Allocations",
+			"allocations",
+			"synchronizedMethodsCount",
+			"synchronizedMethodCount",
+			"targets",
+			"totalAllocations",
+			"statementTypes",
+			"StatementTypes",
+			"statementTypes",
+			"totalStatementCount",
+			"totalMethods",
+			"numberOfMethods",
+			"concreteMethodCount",
+			"addItem",
+			"numberOfMethods",
+			"criticalSectionGraphOutput",
+			"statementsList",
+			"current",
+			"m",
+			"M",
+			"m",
+			"M",
+			"m",
+			"block",
+			"Block",
+			"block",
+			"nameOfCriticalSection",
+			"containsInvokeExpr",
+			"special",
+			"walkGraph",
+			"subMethod",
+			"foundEdge",
+			"edges",
+			"subMethod",
+			".getName()",
+			"subMethod",
+			"source",
+			"subMethod",
+			"targets",
+			"edges",
+			"targets",
+			"foundEdge",
+			"subMethod",
+			"targets",
+			"subMethod",
+			"subStmt",
+			"stmtIt",
+			"methodBody",
+			"subMethod",
+			"walkCriticalSectionBFS",
+			"targets",
+			"temp",
+			"edges",
+			"List<edgeList>",
+			"edges",
+			"_targetMethod",
+			"source",
+			"targets",
+			"methodQueue",
+			"subMethod",
+			"methodQueue",
+			"subMethod",
+			"targets",
+			"subMethod",
+			"methodQueue",
+			"targets",
+			"walkCriticalSectionBFS",
+			"subMethod",
+			"walkCriticalSectionBFS",
+			"graphPath",
+			".plot",
+			"Q.",
+			"walkgraphbfs",
+			"block.",
+			"statementsList",
+			"callGraphOutput",
+			"criticalSectionGraphOutput",
+			"callGraphOutput",
+			"cg",
+			"target",
+			"walkGraph",
+			"WalkGraph",
+			"walkGraph",
+			"callGraphOutput",
+			"walkGraph",
+			"block.",
+			"block.walk",
+			"block.",
+			"addItem",
+			"block",
+			"CriticalSectionBlock",
+			"walkGraph",
+			"WalkGraph",
+			"walkGraph",
+			"lineNumber",
+			"node1SString"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "MyMain.java",
+					"settings":
+					{
+						"buffer_size": 1997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1956,
+								1956
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 626.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ProjectController.java",
+					"settings":
+					{
+						"buffer_size": 30131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2265,
+								2265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8190.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "edgeList.java",
+					"settings":
+					{
+						"buffer_size": 3105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1272,
+								1272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1904.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "CriticalSectionBlock.java",
+					"settings":
+					{
+						"buffer_size": 48248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13765,
+								13765
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "buildCFG.java",
+					"settings":
+					{
+						"buffer_size": 1774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1177,
+								917
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 503.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "IceBergFlowAnalysis.java",
+					"settings":
+					{
+						"buffer_size": 1965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1171,
+								1171
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "CriticalSectionItem.java",
+					"settings":
+					{
+						"buffer_size": 4779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2249,
+								2256
+							],
+							[
+								2395,
+								2402
+							],
+							[
+								2443,
+								2450
+							],
+							[
+								2497,
+								2504
+							],
+							[
+								2554,
+								2561
+							],
+							[
+								2617,
+								2624
+							],
+							[
+								2676,
+								2683
+							],
+							[
+								2727,
+								2734
+							],
+							[
+								2777,
+								2784
+							],
+							[
+								2824,
+								2831
+							],
+							[
+								2877,
+								2884
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "methodInfo.java",
+					"settings":
+					{
+						"buffer_size": 1389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								990,
+								990
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/testScript",
+					"settings":
+					{
+						"buffer_size": 9661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								618,
+								618
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/michaelshah/Dropbox/school/GraduateSchool/Research/Soot/SamsRound2/TableBuilder.py",
+					"settings":
+					{
+						"buffer_size": 2873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2527,
+								2527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 845.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/sunflowBuildScript",
+					"settings":
+					{
+						"buffer_size": 1639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								821,
+								821
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 53.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 66.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

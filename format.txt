@@ -1,0 +1,57 @@
+Iceberg Graph Data format.
+By Michael Shah
+Last Updated: 2/3/15
+
+A Graph is composed of three different JSON Objects.
+The Graph itself, individual nodes, and a control flow graph itself.
+
+
+// ===================== Graph Format =====================
+// TYPE defines what kind of JSON object is being read in.
+// If it is a Graph, then every item following is a 
+// node followed by a list of edges that it is joined by.
+{
+  "TYPE"   : "Graph",
+  "foo"    : ["bar", "foofoo", "barbar" ],
+  "bar"    : ["barbar" ],
+  "foofoo" : [ "barbar" ],
+  "barbar" : [ ]
+}
+
+// ====================== Node Format ======================
+// An individual Node is a point on the graph. It carries with 
+// it various properites of that node.
+// The properties are defined below.
+{
+  "TYPE" : "Node",
+  "name" : "foo",
+  "fields" : "int,int,string", // The fields are a third key for 
+                               // dealing with polymorphic types
+  "isSynchornized" : "Yes",
+  "methodCalls" : 20,
+  "hasBranching" : "yes",
+  etc.
+}
+
+// ====================== CFG Format =======================
+// Each method may have an associated control flow graph with it.
+{
+  "TYPE" : "cfg",
+  "name" : "foo",
+  "fields" : "int,int,string", // The fields are a third key 
+                               // for dealing with polymorphic types
+  "path" : ["foo_1","foo_2","foo_3","foo_4"],
+}
+
+// ====================== CFG Node =========================
+// cfg nodes are uniquely nmaed based on the name and fields
+//  of a method. They are used in the "path" of a cfg.
+{
+  "TYPE" : "cfgnode"
+  "name" : "foo_1", // The first statement in method foo.
+  "jimple" : "whatever the jimple code(s) is"
+  "Java" : "The Java source"
+  "linenumber" : "1 or a range 1-3"
+  "comments": "Any associated comments"
+}
+

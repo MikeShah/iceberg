@@ -1,0 +1,70 @@
+# Purpose of this file is to use in addition to SOOT.
+# Crawls a directory copying class files and packaging them into a directory
+# and ignores all other files.
+
+# Need help with soot: 
+# java -Xmx2g -cp "sootclasses-2.5.0.jar":"polyglotclasses-1.3.5.jar":"jasminclasses-2.5.0.jar":. soot.Main -help
+# How to run a Jar File: http://stackoverflow.com/questions/1238145/how-to-run-a-jar-file
+
+# Directory where class files live
+WORKINGDIRECTORY="../benchmarks/SemaphoreDemo" # Root directory
+JARNAME="SemaphoreDemo.jar"					# Actual java file name
+#JAVAFILENAME="SemaphoreDemo.java"
+
+# Create a simple manifest file 
+echo
+echo '1/5 Creating Default Manifest File NEED TO AUTOMATE THIS SOMEHOW'
+
+echo
+echo '2/5 Compiling the java files'
+JAVACOMPILE='javac ${WORKINGDIRECTORY}/*.java'
+eval ${JAVACOMPILE}
+
+# Creating .jar file 
+CREATEJAR="jar cfm ${WORKINGDIRECTORY}/${JARNAME} ${WORKINGDIRECTORY}/manifest.mf ${WORKINGDIRECTORY}/*.class"
+echo '3/5 Creating Jar:' ${CREATEJAR}
+eval ${CREATEJAR}
+# Run The program to test if it worked
+RUNJAR="java -jar ${WORKINGDIRECTORY}/${JARNAME}"
+echo '4/5 Running Program:' ${RUNJAR}
+eval ${RUNJAR}
+# Make a directory and dump classes in here for soot to work with
+MAKEDIR="mkdir ${WORKINGDIRECTORY}/jar_classes"
+echo '5/5 Extracting classes to jar_classes: '${MAKEDIR}
+eval ${MAKEDIR}
+# Copy the jar into the jar_classes directory so we can mess with it
+COPYFILES="cp ${WORKINGDIRECTORY}/${JARNAME} ${WORKINGDIRECTORY}/jar_classes/"
+echo 'Copying Files: '${COPYFILES}
+eval ${COPYFILES}
+# Move to the jar_classes directory
+MOVETODIR="cd ${WORKINGDIRECTORY}/jar_classes"
+echo 'Moving to Directory' ${MOVETODIR}
+eval ${MOVETODIR}
+# Extract Contents of the jar file
+EXECUTEJAR="jar xf ${WORKINGDIRECTORY}/${JARNAME}"
+echo 'Run jar ' ${EXECUTEJAR}
+eval ${EXECUTEJAR}
+# Move back to the soot directory so we can analyze the newly generated jar from the jar_classes file
+RESETTOSOOT="cd ../../../SamsRound2/"
+echo 'Move back to Soot Directory' ${RESETTOSOOT}
+eval ${RESETTOSOOT}
+echo 'done'
+echo
+echo 'Starting Soot'
+echo
+
+# Run Soot from jar_classes
+#java -cp <soot> soot.Main -cp .:/home/user/ebodde/bin/sun-jdk1.6.0_05/jre/lib/rt.jar A B
+SOOTVERSION="sootclasses-2.5.0.jar"
+SOOTLIBRARIES=".:\"${SOOTVERSION}\":\"jasminclasses-2.5.0.jar\":\"polyglotclasses-1.3.5.jar\":\"${WORKINGDIRECTORY}/jar_classes/\""
+COMPILER="java"
+COMPILER_FLAGS="-Xmx2g"
+# JAVALIBRARIES Should have the full path
+JAVALIBRARIES="\"/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/jre/lib/rt.jar\":\"/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/jre/lib/jce.jar\""
+SOOTFLAGS="-w -f J -soot-class-path .:${JAVALIBRARIES}:\"${WORKINGDIRECTORY}/jar_classes/\" -process-dir \"${WORKINGDIRECTORY}/jar_classes/\""
+
+COMMAND="nice -n 19 ${COMPILER} ${COMPILER_FLAGS} -cp ${SOOTLIBRARIES} lockpatterns.MyMain ${SOOTFLAGS}" 
+echo "runing: ${COMMAND}"
+echo
+eval ${COMMAND}
+

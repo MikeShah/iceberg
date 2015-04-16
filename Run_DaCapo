@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Script for running all of the generated DaCapo Benchmarks
+
+
+COMPILER=java
+COMPILER_FLAGS=-Xmx2g
+SOOT_FLAGS=-print-tags-in-output -time -w -debug -keep-line-number -f J \
+reflection-log:"../benchmarks/DaCapo/out/refl.log" -include org.apache. \
+-include org.w3c. -d "../benchmarks/DaCapo/out/avrora/out2" -main-class "../benchmarks/DaCapo/out/Harness" 
+
+# Path to the DaCapo Benchmark relative to our Soot project
+DACAPOJAR='../benchmarks/DaCapo/dacapo-9.12-bach.jar'
+
+# Compile a java DaCapo benchmark using the play out agent.
+ 
+#java -Xmx4G -cp "sootclasses-2.5.0.jar":"jasminclasses-2.5.0.jar":"polyglotclasses-1.3.5.jar" soot.Main -w -app -p cg reflection-log:out/refl.log -include org.apache. -include org.w3c. -main-class ../benchmarks/DaCapo/out/Harness -d ../benchmarks/DaCapo/out/avrora Harness
+#${COMPILER} ${COMPILER_FLAGS} -cp "sootclasses-2.5.0.jar":"jasminclasses-2.5.0.jar":"polyglotclasses-1.3.5.jar":"../benchmarks/DaCapo/out/avrora/"\
+#:. lockpatterns.MyMain ${SOOT_FLAGS} -process-dir "../benchmarks/DaCapo/out/avrora" 
+
+
+for SIZE in small default large huge
+do
+		#for each benchmark run java from the dacopo.jar file
+		for BM in `java -jar ${DACAPOJAR} -l`
+		do		
+
+				INPUT_DIR="..//benchmarks//DaCapo//out//${BM}-${SIZE}"
+				java -javaagent:"../benchmarks/DaCapo/poa-2.0.1.jar" -jar ${DACAPOJAR} ${BM} -s ${SIZE} -d ${INPUT_DIR}
+				# The actual command to run
+				${COMPILER} ${COMPILER_FLAGS} -cp "sootclasses-2.5.0.jar":"jasminclasses-2.5.0.jar":"polyglotclasses-1.3.5.jar":. lockpatterns.MyMain ${SOOT_FLAGS} -process-dir INPUT_DIR Harness
+
+				#echo '====!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!===='
+				#echo Running Soot on $BM $Size...
+		done
+done

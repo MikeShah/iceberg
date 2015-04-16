@@ -1,0 +1,28 @@
+#Run with bash sunflowBuildScript
+
+# Help 
+# java -Xmx2g -cp "sootclasses-2.5.0.jar":"polyglotclasses-1.3.5.jar":"jasminclasses-2.5.0.jar":. soot.Main -help
+
+# original working command line
+# java -Xmx2g -cp "../benchmarks/Sunflow/sunflow/classes/":"../benchmarks/Sunflow/sunflow/classes/org/":"../benchmarks/Sunflow/sunflow/classes/org/sunflow/":"../benchmarks/Sunflow/sunflow/janino.jar":"sootclasses-2.5.0.jar":"jasminclasses-2.5.0.jar":"polyglotclasses-1.3.5.jar":. lockpatterns.MyMain  -print-tags-in-output -time -w -debug -keep-line-number -f J -process-dir "../benchmarks/Sunflow/sunflow/classes/"
+
+#Recompile the project if necessary
+SOOTVERSION="sootclasses-2.5.0.jar"
+BUILD="Javac -classpath /lockpatterns:/jasminclasses-2.5.0.jar:${SOOTVERSION}: ./lockpatterns/*.java"
+echo "Compiling: ${BUILD}"
+eval ${BUILD}
+
+#java -cp <soot> soot.Main -cp .:/home/user/ebodde/bin/sun-jdk1.6.0_05/jre/lib/rt.jar A B
+
+COMPILER=java
+COMPILER_FLAGS="-Xmx2g"
+JAVACLASSPATH="-cp .:\"/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/jre/lib/rt.jar\":\"/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/jre/lib/jce.jar\""
+SOOTFLAGS="-w -f J -soot-class-path \"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/benchmarks/Sunflow/sunflow/\" -process-dir \"/Users/michaelshah/Dropbox/school/\"Graduate School\"/Research/Soot/benchmarks/Sunflow/sunflow/\""
+
+
+
+
+
+COMMAND="nice -n 19 ${COMPILER} ${COMPILER_FLAGS} ${JAVACLASSPATH}\"${SOOTVERSION}\":\"jasminclasses-2.5.0.jar\":\"polyglotclasses-1.3.5.jar\":. lockpatterns.MyMain -criticalOutput testetsets${SOOTFLAGS}" 
+echo "runing: ${COMMAND}"
+eval ${COMMAND}

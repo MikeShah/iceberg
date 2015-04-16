@@ -1,0 +1,1075 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trans",
+				"transformations"
+			],
+			[
+				"nor",
+				"normalVector"
+			],
+			[
+				"face",
+				"faceCount"
+			],
+			[
+				"GL_T",
+				"GL_TEXTURE_2D"
+			],
+			[
+				"gl",
+				"glDisable"
+			],
+			[
+				"eyep",
+				"eyePointP"
+			],
+			[
+				"dra",
+				"drawRay"
+			],
+			[
+				"draw",
+				"drawRayFunc"
+			],
+			[
+				"mouse",
+				"mouseY"
+			],
+			[
+				"ray",
+				"ray_direction"
+			],
+			[
+				"scre",
+				"screen_click"
+			],
+			[
+				"win",
+				"windowYSize"
+			],
+			[
+				"windo",
+				"windowXSize"
+			],
+			[
+				"eye",
+				"eyePointP"
+			],
+			[
+				"cast",
+				"castRay"
+			],
+			[
+				"wind",
+				"windowXSize"
+			],
+			[
+				"window",
+				"windowYSize"
+			],
+			[
+				"blend",
+				"blendTextureID"
+			],
+			[
+				"load",
+				"loadTexture"
+			],
+			[
+				"set",
+				"setTexture"
+			],
+			[
+				"GL_L",
+				"GL_LIGHTING"
+			],
+			[
+				"glE",
+				"glEnable"
+			],
+			[
+				"VE",
+				"VERTICES"
+			],
+			[
+				"Vertic",
+				"VERTICES"
+			],
+			[
+				"tex",
+				"textureCoordX_delta"
+			],
+			[
+				"m_",
+				"m_segmentsX"
+			],
+			[
+				"m_seg",
+				"m_segmentsY"
+			],
+			[
+				"basete",
+				"baseTextureID"
+			],
+			[
+				"base",
+				"baseTexture"
+			],
+			[
+				"blen",
+				"blendTexture"
+			],
+			[
+				"pp",
+				"ppmFile"
+			],
+			[
+				"line",
+				"lineNumber"
+			],
+			[
+				"allo",
+				"allocationGrowth"
+			],
+			[
+				"tot",
+				"totalAllocations"
+			],
+			[
+				"synch",
+				"synchronizedMethodsCount"
+			],
+			[
+				"constu",
+				"constructorsMethodCount"
+			],
+			[
+				"sync",
+				"synchronizedMethodCount"
+			],
+			[
+				"numb",
+				"numberOfMethods"
+			],
+			[
+				"isConc",
+				"isConstructor"
+			],
+			[
+				"stt",
+				"statement"
+			],
+			[
+				"res",
+				"resolution"
+			],
+			[
+				"coa",
+				"coasterCar4Position"
+			],
+			[
+				"coas",
+				"coasterCar3Position"
+			],
+			[
+				"spli",
+				"splineSize"
+			],
+			[
+				"coast",
+				"coasterPosition"
+			],
+			[
+				"comp",
+				"computed_x_y_z"
+			],
+			[
+				"random",
+				"randomWidth"
+			],
+			[
+				"render",
+				"renderRollerCoaster"
+			],
+			[
+				"spl",
+				"splineSize"
+			],
+			[
+				"resol",
+				"resolution_spinner"
+			],
+			[
+				"rand",
+				"randomWidth"
+			],
+			[
+				"contro",
+				"controlPoint"
+			],
+			[
+				"de",
+				"delta"
+			],
+			[
+				"qpri",
+				"qprime"
+			],
+			[
+				"q",
+				"q"
+			],
+			[
+				"Vg",
+				"Vg_y"
+			],
+			[
+				"Vs",
+				"Vs_y"
+			],
+			[
+				"V",
+				"Vg_y"
+			],
+			[
+				"vs",
+				"Vs_y"
+			],
+			[
+				"qprim",
+				"qprime2"
+			],
+			[
+				"con",
+				"controlPoints"
+			],
+			[
+				"interp",
+				"interpolatedPoints"
+			],
+			[
+				"contr",
+				"controlPoints"
+			],
+			[
+				"control",
+				"controlPoints"
+			],
+			[
+				"cont",
+				"controlPoint"
+			],
+			[
+				"tem",
+				"tempV2"
+			],
+			[
+				"te",
+				"tempV"
+			],
+			[
+				"temp",
+				"tempP"
+			],
+			[
+				"get",
+				"getZPosition"
+			],
+			[
+				"rot",
+				"rotate_around"
+			],
+			[
+				"ro",
+				"rotate_around"
+			],
+			[
+				"vi",
+				"view_pos"
+			],
+			[
+				"OBJE",
+				"objectLinkedList"
+			],
+			[
+				"main",
+				"mainscript"
+			],
+			[
+				"an",
+				"animation"
+			],
+			[
+				"scri",
+				"scriptEngine"
+			],
+			[
+				"ver",
+				"vertexList"
+			],
+			[
+				"vertex",
+				"vertexList"
+			],
+			[
+				"star",
+				"startScene"
+			],
+			[
+				"camera",
+				"camera1"
+			],
+			[
+				"start",
+				"startTheScene"
+			],
+			[
+				"rend",
+				"renderWireFrame"
+			],
+			[
+				"m",
+				"movieCamera"
+			],
+			[
+				"glEn",
+				"glEnable"
+			],
+			[
+				"draw_",
+				"draw_oribits"
+			],
+			[
+				"gri",
+				"grid_size"
+			],
+			[
+				"gr",
+				"grid_size"
+			],
+			[
+				"GL_LI",
+				"GL_LIGHTING"
+			],
+			[
+				"prop",
+				"properties"
+			],
+			[
+				"verte",
+				"vertexList"
+			],
+			[
+				"vert",
+				"vertexCount"
+			],
+			[
+				"del",
+				"delimeter_pointer"
+			],
+			[
+				"fac",
+				"faceList"
+			],
+			[
+				"read",
+				"readVertices"
+			],
+			[
+				"vet",
+				"vertexCount"
+			],
+			[
+				"node1s",
+				"node1Style"
+			],
+			[
+				"is",
+				"isConstructor"
+			],
+			[
+				"ed",
+				"edgeList"
+			],
+			[
+				"edge",
+				"edgeList"
+			],
+			[
+				"entry",
+				"entryMethods"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"whole",
+				"wholeProgramGraph"
+			],
+			[
+				"cal",
+				"callGraphOutput"
+			],
+			[
+				"target",
+				"targetsLoops"
+			],
+			[
+				"wr",
+				"writerCriticalSections"
+			],
+			[
+				"criti",
+				"criticalSectionSummary"
+			],
+			[
+				"tar",
+				"targetsLoops"
+			],
+			[
+				"targ",
+				"target"
+			],
+			[
+				"node1",
+				"node1SString"
+			],
+			[
+				"node",
+				"node1Style"
+			],
+			[
+				"Dot",
+				"DotGraphNode"
+			],
+			[
+				"Critic",
+				"CriticalSectionItem"
+			],
+			[
+				"name",
+				"nameOfCriticalSection"
+			],
+			[
+				"Soot",
+				"SootMethod"
+			],
+			[
+				"directo",
+				"directoryName"
+			],
+			[
+				"io",
+				"IOException"
+			],
+			[
+				"stack",
+				"stackSize"
+			],
+			[
+				"SLi",
+				"SListNode"
+			],
+			[
+				"SL",
+				"SListIterator"
+			],
+			[
+				"Sli",
+				"SListIterator"
+			],
+			[
+				"fri",
+				"friendList"
+			],
+			[
+				"fr",
+				"friendCapacity"
+			],
+			[
+				"frie",
+				"friendCapacity"
+			],
+			[
+				"INT",
+				"INIT_CAPACITY"
+			],
+			[
+				"frien",
+				"friendCount"
+			],
+			[
+				"member",
+				"memberID"
+			],
+			[
+				"friend",
+				"friendCapacity"
+			],
+			[
+				"in",
+				"index"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "CriticalSectionBlock.java",
+			"settings":
+			{
+				"buffer_size": 38347,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "CriticalSectionItem.java",
+			"settings":
+			{
+				"buffer_size": 4733,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "edgeList.java",
+			"settings":
+			{
+				"buffer_size": 1023,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "MyMain.java",
+			"settings":
+			{
+				"buffer_size": 34327,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Processing/Processing.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"syntax",
+				"Set Syntax: Processing"
+			],
+			[
+				"build",
+				"Build: Build"
+			],
+			[
+				"process",
+				"Set Syntax: Processing"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/Assignment4.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/SceneData.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/Camera.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/Algebra.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment4-Intersect/Mac/Shape.h",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSection.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionGroup.java",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/ppm.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/ppm.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/Algebra.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/object.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/object.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/6/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/work-in-progress-solution_06/main.cpp",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionBlock.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/SynchronizedRegionFinder.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/SynchronizedRegion.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/StrayRWFinder.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/NewStaticLock.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/LockAllocator.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/LockAllocationBodyTransformer.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/LockableReferenceAnalysis.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionInterferenceGraph.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionDataDependency.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionVisibleEdgesPred.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/DeadlockAvoidanceEdge.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/DeadlockDetector.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionAwareSideEffectAnalysis.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/SynchronizedRegionFlowPair.java",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/spline.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/spline.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment3-SceneView/Mac/Assignment3.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/Homework/Assignment3-SceneView/Mac/shapes/Shape.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/movieCamera.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/3/movieCamera.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/movieCamera.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_03/entity.cpp",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/HTML5 Game Designer/index.html",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/HTML5 Game Designer/mainscript.js",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/HTML5 Game Designer/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution02/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/1-Remco/InClass1/Lab1/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/work-in-progress-solution_02/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics-Shared/InClass/Solutions/Solution01/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/object.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/05/object.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/entity.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/entity.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/movieCamera.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/movieCamera.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/blender.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/03/blender.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/02/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/02/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/04/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/04/solarSystem.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/04/solarSystem.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics/InClass/work-in-progress-solution_01/geometry.h",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics/InClass/work-in-progress-solution_01/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics/InClass/work-in-progress-solution_01/ply.cpp",
+		"/Users/michaelshah/Dropbox/Comp175-Graphics/InClass/work-in-progress-solution_01/ply.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/01/dragon_vrip_res4.ply",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/MyMain.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/edgeList.java",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionItem.java",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/InClassAssignments/01/bun_zipper_res4.ply",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Example1.cpp",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Algebra.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Torus.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Shape.h",
+		"/Users/michaelshah/Dropbox/Comp175Spring2014/Homeworks/Remco_A1/Torus copy.h",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/ModelLoader/main.cpp",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/ModelLoader/model.h",
+		"/Users/michaelshah/Dropbox/Curved Basic Labs/Software/ModelLoader/model.cpp",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/CriticalSectionVisibleEdgesPred.class",
+		"/Users/michaelshah/Dropbox/Algorithms/graph/graph.cpp",
+		"/Users/michaelshah/Dropbox/Algorithms/mergesort/mergesort.cpp",
+		"/Users/michaelshah/Dropbox/Algorithms/bst/bst.h",
+		"/Users/michaelshah/Dropbox/Algorithms/bst/bst.cpp",
+		"/Users/michaelshah/Dropbox/Algorithms/bst/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/factory.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/factory.h",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/Package.h",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/AssemblyLine.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/AssemblyLine.h",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/Queue.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/Queue.h",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/LinkedList.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/hw3_grading/ccasey01.2/LinkedList.h",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/lockpatterns/MyMain.java~",
+		"/Users/michaelshah/Dropbox/school/Graduate School/Research/Soot/SamsRound2/MyMain.java",
+		"/Users/michaelshah/Dropbox/Algorithms/SListNode/SListIterator.h",
+		"/Users/michaelshah/Dropbox/Algorithms/SListNode/SListNode.h",
+		"/Users/michaelshah/Dropbox/Algorithms/SListNode/main.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/lab1/sortedlist.h",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/lab1/sortedlist.cpp",
+		"/Users/michaelshah/Dropbox/Comp15_Fall2013/lab1/sortedlist_full.cpp"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"level",
+			"\\\\",
+			"transVec",
+			"TRANS",
+			"trans",
+			"transVec",
+			"size",
+			"flattenScene",
+			"success",
+			"/",
+			"p",
+			"sunflow",
+			"intersect",
+			"08",
+			"drawtext",
+			"render",
+			"view_rotate",
+			"drawRayFunc",
+			"drawTexturedSphere",
+			"myObject->",
+			"-5",
+			"rgbcolors",
+			"setPixel",
+			"object",
+			"Objects",
+			"glui2",
+			"light0",
+			"LIGHT0_INTENSITY_ID",
+			"cb",
+			"pointer",
+			"setpixel",
+			"int",
+			"rayV",
+			"drawrayfunc",
+			"drawrayfu",
+			"vector",
+			"inv",
+			"inverse",
+			"drawtexturedsphere",
+			"GL_LI",
+			"GL_LINES",
+			"drawR",
+			"castRay",
+			"window_width",
+			"window_height",
+			"float",
+			"int",
+			"(1 ,",
+			"(1,",
+			"myglutreshape",
+			"unsigned",
+			"GLuint",
+			"baseTexture",
+			"255",
+			"int",
+			"baseTexture",
+			"Matrix",
+			"DisplaySphere(",
+			"();",
+			"glTexCoord2f",
+			"1",
+			"PI",
+			"1.0",
+			"0f",
+			"2.5",
+			"baseTextureID",
+			"baseTexture",
+			"baseTextureID",
+			"textureId",
+			"myfile",
+			"statementsList",
+			"getStatments",
+			"getStatement",
+			"getStatements",
+			"statementSummary",
+			"synchron",
+			"dirName",
+			"graphPath",
+			"testingProgram",
+			"of",
+			"Number",
+			"number",
+			"Number",
+			"nNumber",
+			"statementsList",
+			"totalAllocations",
+			"//",
+			";",
+			"int",
+			"urrent",
+			"urrent.i",
+			"urrent",
+			"{",
+			"numberOfMethods",
+			"++;",
+			"+\"\\n\"",
+			"isAmethod",
+			"isAMethod",
+			"criticalSectionSummary",
+			"summary",
+			"getCriticalSectionSummary",
+			"isAMethod",
+			"addItem",
+			"dot",
+			"whole",
+			"testingProgram",
+			"generateDOTGraph",
+			"walkGraph",
+			"method",
+			"isamethod",
+			"getCriticalSectionSummary",
+			"methodSummary",
+			"Summary",
+			"Matrix",
+			"projection",
+			"pointer_cb",
+			"control_cb",
+			"myglutdisplay",
+			"resolution",
+			"coasterCar1Position",
+			"coasterPosition",
+			"=",
+			"int",
+			"//",
+			"renderControlPoints",
+			"renderRollerCoaster",
+			"renderControlPoints",
+			"render"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "CriticalSectionBlock.java",
+					"settings":
+					{
+						"buffer_size": 38347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14206,
+								14206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5780.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "CriticalSectionItem.java",
+					"settings":
+					{
+						"buffer_size": 4733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4405,
+								4405
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1737.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "edgeList.java",
+					"settings":
+					{
+						"buffer_size": 1023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "MyMain.java",
+					"settings":
+					{
+						"buffer_size": 34327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3934,
+								3934
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1828.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 66.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
