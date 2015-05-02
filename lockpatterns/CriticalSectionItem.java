@@ -56,8 +56,6 @@ public class CriticalSectionItem{
     boolean isPublic;
     boolean isStatic;
     boolean isSynchronized;
-
-
     
     // Constructor for a single Critical Section Item
     public CriticalSectionItem(Stmt stmt, String lineNumber, boolean isAMethod){

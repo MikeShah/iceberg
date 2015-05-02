@@ -55,12 +55,13 @@ public class ProjectController
      public static boolean optionPrintDebug = false;
 	 public static boolean optionOpenNesting = false;
 
-	 private String[] args;	///!< Stores arguments passed in through the console.
-	 public String sootOutputDirectory; ///!< Where the output is stored
-     public String testingProgram = "no-name-output";    ///!< Needs to change or be read in from command args
-     public List<String> sootsClassPath;                 //!< Stores List of files soot will perform analysis on
-     public String sootClassPathString;                  //!< Takes all entries of sootClassPath and concatenates them
-
+	private String[] args;	///!< Stores arguments passed in through the console.
+	public String sootOutputDirectory; ///!< Where the output is stored
+    public String testingProgram = "no-name-output";    ///!< Needs to change or be read in from command args
+    public List<String> sootsClassPath;                 //!< Stores List of files soot will perform analysis on
+    public String sootClassPathString;                  //!< Takes all entries of sootClassPath and concatenates them
+    MethodTable myMethodTable;                          // Keeps a list of all of the methods in the program.
+                    
     /**
     *	A constructor
     *
@@ -68,6 +69,8 @@ public class ProjectController
 	public ProjectController(String[] _args, String outputDirectory){
 		args = _args;
         setSootOutputDirectory(outputDirectory);
+
+        myMethodTable = new MethodTable();
 
 		System.out.println("\n=========vRetrieving Program Argumentsv=========");
         sootsClassPath = new LinkedList<String>();
@@ -172,7 +175,7 @@ public class ProjectController
                                    
                                             CriticalSection tn = ((SynchronizedRegionFlowPair) fList.get(i)).tn;
                                             //G.v().out.println("!!Found critical section in!! " + tn.method.getName());
-                                            block = new CriticalSectionBlock(body, tn.method);
+                                            block = new CriticalSectionBlock(body, tn.method, sootOutputDirectory);
                                         
                                             Unit b = tn.beginning;
                                             for (Unit u : tn.units) {        
@@ -368,6 +371,7 @@ public class ProjectController
 					Queue<SootMethod> Q = new LinkedList<SootMethod>();
 					int count = 0;
 
+
 					// Add the first item onto our Q, generally this is
 					// an entry point into the program.
 					// 1  procedure BFS(G,v) is
@@ -379,6 +383,9 @@ public class ProjectController
 	                    SootMethod _methodSource = Q.remove();
 	                    // Extract all of the methods from the source of other methods and then enqueue them.
 						if(_methodSource.hasActiveBody()){
+                            // Attempt to add our method if we have not already to our method table.
+                            myMethodTable.add(_methodSource);
+
 	                        Body methodBody = _methodSource.getActiveBody();
 	                        Chain sourceUnits = methodBody.getUnits();
 	                        Iterator stmtIt = sourceUnits.snapshotIterator();
@@ -389,7 +396,7 @@ public class ProjectController
 			                                SootMethod _targetMethod = subStmt.getInvokeExpr().getMethod();
 
                                             // Capture anything that is not Java.
-                                            if(!_targetMethod.isJavaLibraryMethod()){
+                                            //if(!_targetMethod.isJavaLibraryMethod()){
             			                                // Handle special cases to avoid recursive calls
             			                                if(!_methodSource.getName().equals(_targetMethod.getName())){
             			                         			boolean foundEdge = false;   // Does the edge exist yet
@@ -443,17 +450,12 @@ public class ProjectController
 
             			                         			}
             			                                }
-                                            }
+                                            //} // Ca
 			                            }
 			                        }
 	                    }
 	                }   
 
-
-	                // Temp code to print out adjacency list
-	                for(int i =0 ; i < edges.size();i++){
-	                	G.v().out.println(edges.get(i).printTargets());
-	                }
 
 
                 }
@@ -473,6 +475,18 @@ public class ProjectController
                             walkGraph(target);
                         }
                         callGraphOutput.plot(graphPath);
+
+                    // Temp code to print out adjacency list
+                    for(int i =0 ; i < edges.size();i++){
+                        G.v().out.println(edges.get(i).printTargets());
+                    }
+                    // Temp code to print out all of the methods
+                    G.v().out.println("====v List of methods v====");
+                    G.v().out.println(myMethodTable.print(0));
+                    G.v().out.println("====^ List of methods ^====");
+                    // Compute paths
+                    myMethodTable.computeShortestPaths();
+                    myMethodTable.computeLongestPaths();
                 }
 			   
 		   }
@@ -498,7 +512,6 @@ public class ProjectController
         // Add a body transformation for individual methods
         PackManager.v().getPack("jtp").add(critSection()); 
 				
-         
 		/*  added to support call graphs
 			Based on tutorial/guide/examples/call_graph/src
 		*/		

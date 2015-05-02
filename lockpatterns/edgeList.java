@@ -60,18 +60,23 @@ public class edgeList{
 	/*!
 		Used to get the source edge (head)
 	*/
-	public SootMethod getSource(){	return source;	}
+	public SootMethod getSource(){	
+		return source;	
+	}
 
 	/*!
 		Used to get a specific destination edge(tail)
 	*/
-	public SootMethod getTargetAt(int i){	return targets.get(i);	}
+	public SootMethod getTargetAt(int i){	
+		return targets.get(i);	
+	}
 
 	/*!
 		(Deprecated) Used to get a first destination edge(tail)
 	*/
-	public SootMethod getTarget(){	return target;	}
-
+	public SootMethod getTarget(){	
+		return target;	
+	}
 
 	/*!
 		Pass in a source and a target and if it matches

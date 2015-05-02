@@ -50,26 +50,15 @@ public class CriticalSectionBlock
 {
     String nameOfCriticalSection;   // Stores the name of the critical section
     public ArrayList<CriticalSectionItem> statementsList;  // Holds a list of all of the statements in the body of one piece of code
-    int numberOfStatements; // Records how many statements there are total in the body of this critical section
-    int numberOfMethods;    // Records how many of the statements are method calls (at the first level).  This is a conveinence function
-        int allocations;
-        int concreteMethodCount;    // Of the total 'numberOfMethods' how many are concrete
-        int constructorsMethodCount;    // how many are constructors
-        int entryMethodsCount;          // How many are entry methods
-        int javaLibraryMethodsCount;    // How many are java library functions in the first level
-        int totalJavaLibraryMethodsCount; // How many are java library functions outside of the first level
-        int privateMethodsCount;        // How many are private
-        int protectedMethodsCount;      // How many are protected
-        int publicMethodsCount;         // How many are public
-        int staticMethodsCount;         // How many are static
-        int synchronizedMethodsCount;   // How many are synchronized methods within this synchronized methods body
-
+    CriticalSectionFeature csf;
+    
     Body body;                          // The Body of the synchronized block. We use this for genreating the Control Flow Graph
     SootMethod m;                       // The code of the synchronized block.
 
     int[] statementTypes;   // Conveinent representation that tallies how many of each type of statement  exist within a critical section.
     
     DotGraph callGraphOutput;
+    DotGraph cfgOutput;
     DotGraph criticalSectionGraphOutput;
     String graphPath2;
     //CallGraph cg;
@@ -80,43 +69,27 @@ public class CriticalSectionBlock
     List<edgeList> edges; // List that contains all possible edges in the graph. We want to eliminate duplicates
                          // by making sure we only ever draw one source to one target here.
     
-    int totalMethods;   // Total methods called from the synchronized section, plus the method calls of the branches below.
-    int totalAllocations;  
-    int totalSynchronizedSections;
-    int totalStatementCount;
 
     // Start collecting statistics
     ArrayList<methodInfo> methodInfoNames; // Keeps track of all methods called.
     
+    String dumpDiretory; // Where the soot project files are output for analysis
 
     // Name:        CriticalSectionBlock
     // Description: Default constructor
-    public CriticalSectionBlock(Body _body, SootMethod _m){
+    public CriticalSectionBlock(Body _body, SootMethod _m, String _dumpDiretory){
         m = _m;
         body = _body;
+        dumpDiretory = _dumpDiretory;
         this.nameOfCriticalSection = m.getName();
         statementsList = new ArrayList<CriticalSectionItem>();
+        csf = new CriticalSectionFeature();
+
         statementTypes = new int[17];
         criticalSectionSummary = "This needs to be implemented!";
         edges = new ArrayList<edgeList>();
 
         methodInfoNames = new ArrayList<methodInfo>();
-
-        totalMethods = 0;
-        concreteMethodCount = 0;
-        constructorsMethodCount = 0;     
-        entryMethodsCount = 0;           
-        javaLibraryMethodsCount = 0;
-        totalJavaLibraryMethodsCount = 0;     
-        privateMethodsCount = 0;         
-        protectedMethodsCount = 0;       
-        publicMethodsCount = 0;          
-        staticMethodsCount = 0;          
-        synchronizedMethodsCount = 0;
-
-        totalAllocations = 0;
-        totalSynchronizedSections = 0;
-        totalStatementCount = 0;
     }
     
     public void setMethod(SootMethod _m){
@@ -127,21 +100,10 @@ public class CriticalSectionBlock
     // Description: Adds a new statement to the statementsList.
     //              If it is a method than we increment that count.
     public void addItem(CriticalSectionItem item){
-        if(item.isAMethod==true){
-            numberOfMethods++;
-                if(item.isConcrete)     { concreteMethodCount++;        }
-                if(item.isConstructor)  { constructorsMethodCount++; allocations++;}
-                if(item.isEntryMethod)  { entryMethodsCount++;          }
-                if(item.isJavaLibraryMethod) { javaLibraryMethodsCount++; }
-                if(item.isPrivate)      { privateMethodsCount++;        }
-                if(item.isProtected)    { protectedMethodsCount++;      }
-                if(item.isPublic)       { publicMethodsCount++;         }
-                if(item.isStatic)       { staticMethodsCount++;         }
-                if(item.isSynchronized) { synchronizedMethodsCount++;   }
-        }
 
+        csf.incrementNumberOfMethods(item);
         statementsList.add(item);
-        numberOfStatements++;
+        
     }
     
     // Name:        addItem
@@ -165,27 +127,16 @@ public class CriticalSectionBlock
     // Description: Returns the critical seciton summary
     //              This is a string that represents the final summary of methods
     public String getCriticalSectionSummary(){
-
-        criticalSectionSummary =    "\n\nMethods called: " + numberOfMethods + "\n" + 
-                                    "Constructors called: " + constructorsMethodCount + "\n" + 
-                                    "Entry Methods called: " + entryMethodsCount + "\n" + 
-                                    "Java Library Methods called: " + javaLibraryMethodsCount + "\n" + 
-                                    "Private Methods called: " + privateMethodsCount + "\n" + 
-                                    "Protected Methods called: " + protectedMethodsCount + "\n" + 
-                                    "Public Methods called: " + publicMethodsCount + "\n" + 
-                                    "Static Methods called: " + staticMethodsCount + "\n" + 
-                                    "Synchronized Methods called: " + synchronizedMethodsCount + "\n";
-
-        return criticalSectionSummary;
+        return csf.getCriticalSecitonFeatureSummary();
     }
     
     // Name:        getMethods
     // Description: Output only the methods that are contained within a critical section
     public String[] getMethods(){
-        String[] statements = new String[numberOfMethods];
+        String[] statements = new String[csf.numberOfMethods];
         int i = 0;
         int j = 0;
-        while( i < numberOfStatements){
+        while( i < csf.numberOfStatements){
             if(statementsList.get(i).isAMethod==true){
                 statements[j] = statementsList.get(i).outputItem();
                 j++;
@@ -198,8 +149,8 @@ public class CriticalSectionBlock
     // Name:        getStatements
     // Description: Outputs the entire list of statements
     public String[] getStatments(){
-        String[] statements = new String[numberOfStatements];
-        for(int i = 0; i < numberOfStatements; i++){
+        String[] statements = new String[csf.numberOfStatements];
+        for(int i = 0; i < csf.numberOfStatements; i++){
             statements[i] = statementsList.get(i).outputItem();
         }
         return statements;
@@ -209,8 +160,8 @@ public class CriticalSectionBlock
     // Description: Takes the body of statements and decides
     //              what type of statement it is.
     public String[] getStatementTypes(){
-        String[] statements = new String[numberOfStatements];
-        for(int i = 0; i < numberOfStatements; i++){
+        String[] statements = new String[csf.numberOfStatements];
+        for(int i = 0; i < csf.numberOfStatements; i++){
             Stmt item = statementsList.get(i).getStatement();
 
             // See if the statement is some structure
@@ -310,7 +261,7 @@ public class CriticalSectionBlock
              // Create a directory to hold all of our critical sections output
              String directoryName = dirName;
              try{
-                 boolean success = ( new File("/Users/michaelshah/Documents/sootDump/"+directoryName).mkdir());
+                 boolean success = ( new File(dumpDiretory+directoryName).mkdir());
                  if(!success){
                      return true;
                  }
@@ -325,18 +276,21 @@ public class CriticalSectionBlock
         Makes a Control Flow Graph from the Jimple representation
     */
     public void makeControlFlowGraph(String directoryName){
+/*
         //CFG methodCFG= new CFG((method_info)m);
         CFGToDotGraph d = new CFGToDotGraph();
         UnitGraph eug = new BriefUnitGraph(body);
         DotGraph outputGraph;
         outputGraph = d.drawCFG(eug,body);
-        outputGraph.plot(directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_cfg_generated_from_soot.dot");
+        String basePath = directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection;
+        outputGraph.plot(basePath+"_cfg_generated_from_soot.dot");
         //d.CFGToDotGraph();
-        
+        cfgOutput = new DotGraph(basePath+"cfg_manual.dot");
+
 
         try{
             FileWriter writerCFGTempInfo;
-            File CFGTempInfoFile = new File(directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_cfgInfo.txt");
+            File CFGTempInfoFile = new File(basePath+"_cfgInfo.txt");
             CFGTempInfoFile.createNewFile();
             writerCFGTempInfo = new FileWriter(CFGTempInfoFile);
 
@@ -345,49 +299,58 @@ public class CriticalSectionBlock
             List<Unit> heads = eug.getHeads();
 
             Queue<Unit> cfgUnitQueue = new LinkedList<Unit>();
-            Unit firstHead = eug.getHeads().get(1);
+            Unit firstHead = eug.getHeads().get(0);
+            // Create a default head node
+            DotGraphNode nodeHead = cfgOutput.getNode(firstHead.toString());
+            nodeHead.setShape("house");
+
             cfgUnitQueue.add( firstHead );  // Get the first head and put it in the queue
                                                         // This makes the assumption that there is only
                                                         // one head for now.
             
             List<buildCFG> edges = new ArrayList<buildCFG>();
+
             while(!cfgUnitQueue.isEmpty()){
                 Unit nextUnit = cfgUnitQueue.remove();
 
                 List<Unit> nodes = eug.getSuccsOf(nextUnit);
                 
-                // Perform Breadth First Search to build a CFG
+
+                // Check if the edge exists in our graph, and then
+                // add it if it doesn't.
+
                 for(int i =0; i < nodes.size(); i++){
                     // Add nodes to the queue
                     cfgUnitQueue.add(nodes.get(i)); 
                     // Draw edges
-                    buildCFG temp = new buildCFG(firstHead,nodes.get(i));
+                    buildCFG temp = new buildCFG(nextUnit,nodes.get(i));
 
-                    // Check if the edge exists in our graph, and then
-                    // add it if it doesn't.
-                    boolean addCFGEdge = true;
+                    boolean addCFGEdge = true;                // Perform Breadth First Search to build a CFG
+
                     for(int j = 0; j < edges.size(); j++){
-                        if(edges.get(j).edgeExist(firstHead,nodes.get(j))) {
+                        if(edges.get(j).edgeExist(nextUnit,nodes.get(i)) || edges.get(j).edgeExist(nextUnit,nextUnit) ) {
                             addCFGEdge = false;
-                            break;
                         }
                     }
-                    if(addCFGEdge){
+        
+                   if(addCFGEdge){
                         edges.add(temp);
+                        DotGraphNode node1 = cfgOutput.getNode(nodes.get(i).toString());
+                        cfgOutput.drawEdge(nextUnit.toString(),nodes.get(i).toString());
+                        node1.setShape("house"); 
+                        node1.setHTMLLabel("Type of node");
                     }
-
                 }
 
             }
 
-            /*
-            writerCFGTempInfo.write("Number of heads: "+heads.size());
-            for(int i =0; i < heads.size(); i++){
-                List<Unit> nodes = eug.getSuccsOf(heads.get(i));
-
-                writerCFGTempInfo.write("Number of Succs "+nodes.size());
-            }
-            */
+//            writerCFGTempInfo.write("Number of heads: "+heads.size());
+//            for(int i =0; i < heads.size(); i++){
+//                List<Unit> nodes = eug.getSuccsOf(heads.get(i));
+//
+//                writerCFGTempInfo.write("Number of Succs "+nodes.size());
+//            }
+            
 
             writerCFGTempInfo.flush();
             writerCFGTempInfo.close(); 
@@ -397,29 +360,10 @@ public class CriticalSectionBlock
             G.v().out.println(e.toString());
         }
 
-        //DotGraph d = new DotGraph(eug,body);
-/*
 
-
-        // Get the unit graph
-        UnitGraph eug = new BriefUnitGraph(body);
-
-        // Get all of the units
-        Chain units = body.getUnits();
-
-        units
-
-        UnitBox
-        Unit lastUnit = (Unit) units.getLast();
-        FlowSet fs = (FlowSet) ta.getFlowBefore(lastUnit);
-        List fList = fs.toList();
-
-        for(Object o: fList){
-            o.getType().toString();
-        }
+        cfgOutput.plot(basePath+"cfg_manual.dot");
 */
-
-    }
+    }   // End of function
 
 
     /*!
@@ -433,8 +377,8 @@ public class CriticalSectionBlock
 
         // Create a directory for the critical section
         String graphPath = directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"-2.dot";
-           createDirectory(directoryName+"/"+nameOfCriticalSection+"/");
-       graphPath2 = directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+".dot";
+        createDirectory(directoryName+"/"+nameOfCriticalSection+"/");
+        graphPath2 = directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+".dot";
 
         G.v().out.println("Attempting to create directory here: "+graphPath2); 
         // Create a new .dot file.
@@ -446,7 +390,7 @@ public class CriticalSectionBlock
 
 
         // Search through all of the statements in the critical section
-        for(int i = 0; i < numberOfStatements; i++){
+        for(int i = 0; i < csf.numberOfStatements; i++){
             if(statementsList.get(i).isAMethod==true){
                 Stmt item = statementsList.get(i).getStatement();
                 SootMethod current = item.getInvokeExpr().getMethod();
@@ -456,7 +400,7 @@ public class CriticalSectionBlock
                 //G.v().out.println("About to enter recursion");
                 //walkGraph(current,7);
                 if(current.isConstructor()==true){
-                    allocations++;
+                    csf.allocations++;
                 }
                 
                 edgeList temp = new edgeList(m,current);
@@ -467,9 +411,6 @@ public class CriticalSectionBlock
                 walkCriticalSectionBFS(current);
             }
         }
-
-
-
 
         // Modify the top node, because it is a critical section, and we want to output information about it.
         DotGraphNode node1 = callGraphOutput.getNode(nameOfCriticalSection);
@@ -483,13 +424,13 @@ public class CriticalSectionBlock
         node1Style += "<TD>-</TD></TR>";  
 
         node1Style += "<TR><TD>MethodCalls</TD>";
-        node1Style += "<TD># of method calls in first level: "+numberOfMethods+ "</TD>";
-        node1Style += "<TD>total # of method calls: "+(totalMethods+numberOfMethods)+"</TD>"; 
-        node1Style += "<TD># of synchronized method calls in first level: "+ synchronizedMethodsCount + "</TD>"; 
-        node1Style += "<TD>total # of sync method calls: "+ totalSynchronizedSections+"</TD></TR>";  
+        node1Style += "<TD># of method calls in first level: "+csf.numberOfMethods+ "</TD>";
+        node1Style += "<TD>total # of method calls: "+(csf.totalMethods+csf.numberOfMethods)+"</TD>"; 
+        node1Style += "<TD># of synchronized method calls in first level: "+ csf.synchronizedMethodsCount + "</TD>"; 
+        node1Style += "<TD>total # of sync method calls: "+ csf.totalSynchronizedSections+"</TD></TR>";  
 
         float methodGrowth = 0;
-        if(totalMethods+numberOfMethods != 0){ methodGrowth = (float)totalMethods / (float)(totalMethods+numberOfMethods); }
+        if(csf.totalMethods+csf.numberOfMethods != 0){ methodGrowth = (float)csf.totalMethods / (float)(csf.totalMethods+csf.numberOfMethods); }
         
         node1Style += "<TR><TD>Method Analysis</TD>";
         node1Style += "<TD>Growth from first level: "+ methodGrowth + "</TD>";
@@ -498,14 +439,14 @@ public class CriticalSectionBlock
         node1Style += "<TD>-</TD></TR>"; 
 
         node1Style += "<TR><TD>Allocations(Constructors called)</TD>";
-        node1Style += "<TD># of allocations in first level: "+constructorsMethodCount+"</TD>";
-        node1Style += "<TD>Total # of allocations: "+totalAllocations+"</TD>"; 
+        node1Style += "<TD># of allocations in first level: "+csf.constructorsMethodCount+"</TD>";
+        node1Style += "<TD>Total # of allocations: "+csf.totalAllocations+"</TD>"; 
         node1Style += "<TD>-</TD>"; 
         node1Style += "<TD>-</TD></TR>";
 
 
         float allocationGrowth = 0;
-        if(totalAllocations !=0) { allocationGrowth = (float)(constructorsMethodCount / (float)totalAllocations); } 
+        if(csf.totalAllocations !=0) { allocationGrowth = (float)(csf.constructorsMethodCount / (float)csf.totalAllocations); } 
 
         node1Style += "<TR><TD>Allocation Analysis</TD>";
         node1Style += "<TD>Growth from first level: "+allocationGrowth+"</TD>";
@@ -515,13 +456,13 @@ public class CriticalSectionBlock
 
         node1Style += "<TR><TD>LineCount</TD>";
         node1Style += "<TD>#of lines of IR in first level: </TD>";
-        node1Style += "<TD>total # lines of IR: "+totalStatementCount+"</TD>"; 
+        node1Style += "<TD>total # lines of IR: "+csf.totalStatementCount+"</TD>"; 
         node1Style += "<TD>-</TD>"; 
         node1Style += "<TD>-</TD></TR>";  
 
         node1Style += "<TR><TD>Method Type</TD>";
-        node1Style += "<TD># of Java library methods: "+javaLibraryMethodsCount+"</TD>";
-                    int nonJavaMethodCount = (totalMethods+numberOfMethods-javaLibraryMethodsCount);
+        node1Style += "<TD># of Java library methods: "+csf.javaLibraryMethodsCount+"</TD>";
+                    int nonJavaMethodCount = (csf.totalMethods+csf.numberOfMethods-csf.javaLibraryMethodsCount);
         node1Style += "<TD># of non-java methods"+nonJavaMethodCount+"</TD>"; 
         node1Style += "<TD>-</TD>";
         node1Style += "<TD>-</TD></TR>";  
@@ -536,7 +477,7 @@ public class CriticalSectionBlock
         node1.setHTMLLabel(node1Style);  
 
         // Output the final dot graph
-        callGraphOutput.plot(graphPath);
+        // (deprecated) callGraphOutput.plot(graphPath);
 
         // ========v CSV Output v===========
         
@@ -548,17 +489,17 @@ public class CriticalSectionBlock
                 //writerCSVSummary = new FileOutputStream(csvFeatures);
                     out.write(nameOfCriticalSection+","); // "Features of Critical Section:"
 
-                    out.write(numberOfMethods+",");            // "# of method calls in first level: "+
-                    out.write(totalMethods+numberOfMethods+","); // "total # of method calls: " 
-                    out.write(synchronizedMethodsCount+",");   // "# of synchronized method calls in first level: "
-                    out.write(totalSynchronizedSections+",");  // "total # of sync method calls: "
+                    out.write(csf.numberOfMethods+",");            // "# of method calls in first level: "+
+                    out.write(csf.totalMethods+csf.numberOfMethods+","); // "total # of method calls: " 
+                    out.write(csf.synchronizedMethodsCount+",");   // "# of synchronized method calls in first level: "
+                    out.write(csf.totalSynchronizedSections+",");  // "total # of sync method calls: "
                     out.write(methodGrowth+",");               // "Growth from first level: "
 
-                    out.write(constructorsMethodCount+",");    // "Number of allocations in first level: "
-                    out.write(totalAllocations+",");           // "Total # of allocations: "
+                    out.write(csf.constructorsMethodCount+",");    // "Number of allocations in first level: "
+                    out.write(csf.totalAllocations+",");           // "Total # of allocations: "
 
                     out.write(allocationGrowth+",");           // "Growth from first level: "
-                    out.write(totalStatementCount);        // "total # lines of IR: "
+                    out.write(csf.totalStatementCount);        // "total # lines of IR: "
                 out.close();
             }
             catch(IOException e){
@@ -643,21 +584,21 @@ public class CriticalSectionBlock
                         // Check if the next statement is a method
 
                         // Increment the number of statements we have found.
-                        totalStatementCount++;
+                        csf.totalStatementCount++;
                         if(subStmt.containsInvokeExpr()){
                             SootMethod targets = subStmt.getInvokeExpr().getMethod();
                             // Each time we find a method, we have to increment the number of methods we have found.
-                            totalMethods++;
+                            csf.totalMethods++;
 
                             // Increment how many synchronized and constructors we are finding
                             if(targets.isSynchronized()==true){
-                                totalSynchronizedSections++;
+                                csf.totalSynchronizedSections++;
                             }
                             if(targets.isConstructor()==true){
-                                totalAllocations++;
+                                csf.totalAllocations++;
                             }
                             if(targets.isJavaLibraryMethod()==true){
-                                totalJavaLibraryMethodsCount++;
+                                csf.totalJavaLibraryMethodsCount++;
                             }
 
                             // Add the method to the queue, if it is not a recursive call
@@ -691,6 +632,8 @@ public class CriticalSectionBlock
     } // ends function body of     public void walkCriticalSectionBFS(SootMethod target
 
 
+
+/*
     // Name:        walkGraph
     // Description: Recursive walking of graph of a critical section
     //              Builds a call graph for a single critical section
@@ -716,7 +659,7 @@ public class CriticalSectionBlock
                     while(stmtIt.hasNext()){
                         Stmt subStmt = (Stmt)stmtIt.next();
                         statementCount++;
-                        totalStatementCount++;
+                        csf.totalStatementCount++;
 
                         if(subStmt.containsInvokeExpr()){
                             methodCount++;
@@ -751,15 +694,15 @@ public class CriticalSectionBlock
                                     // If we found an edge we can add to our list, actually do some
                                     // work here. 
                                     if(foundEdge==false){
-                                        totalMethods++;
+                                        csf.totalMethods++;
                                         // increment the synchronized methods called.
                                         if(target.isSynchronized()==true){
                                             synchronizedMethodCount++;
-                                            totalSynchronizedSections++;
+                                            csf.totalSynchronizedSections++;
                                         }
                                         if(target.isConstructor()==true){
-                                            allocations++;
-                                            totalAllocations++;
+                                            csf.allocations++;
+                                            csf.totalAllocations++;
                                         }
 
                                         // finally actually add our edge to the edge list
@@ -838,7 +781,7 @@ public class CriticalSectionBlock
                                                     }
                                                     criticalSectionSummary += "\t"+target.isSynchronized();
 
-                                                    node1SString += "<TD bgcolor=\"green\">allocations:"+allocations+"</TD>";
+                                                    node1SString += "<TD bgcolor=\"green\">allocations:"+csf.allocations+"</TD>";
                                                     node1SString += "<TD bgcolor=\"green\">statementCount:"+statementCount+"</TD>";
                                                     node1SString += "</TR></TABLE>>";
 
@@ -892,12 +835,14 @@ public class CriticalSectionBlock
         }
     } // end function
 
+*/
+
     // Find the name of a method, if it exists, then increment its count,
     // otherwise add it.
     public void searchMethodInfo(methodInfo m){
         boolean methodExists = false;
         for(int i =0 ; i < methodInfoNames.size(); i++){
-            if(methodInfoNames.get(i).name.equals(m.name)){
+            if(methodInfoNames.get(i).method.getName().equals(m.method.getName())){
                 methodInfoNames.get(i).incrementCalls();
                 methodExists = true;
                 break;
@@ -926,14 +871,14 @@ public class CriticalSectionBlock
         // Create a new directory if it doesn't exist for us to store our
         // files in
         try{
-            boolean success = ( new File("/Users/michaelshah/Documents/sootDump/"+projectName+"/"+directoryName+"/"+nameOfCriticalSection).mkdirs());
+            boolean success = ( new File(dumpDiretory+projectName+"/"+directoryName+"/"+nameOfCriticalSection).mkdirs());
             if(!success){
                     G.v().out.println("Unable to make directory");
             }
             
                         
             // Output Jimple Code
-            File criticalSectionJimple = new File("/Users/michaelshah/Documents/sootDump/"+projectName+"/"+directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_Summary.txt");
+            File criticalSectionJimple = new File(dumpDiretory+projectName+"/"+directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_Summary.txt");
             writerCriticalSections = new FileWriter(criticalSectionJimple);
                 writerCriticalSections.write("//*==============v=Pure Jimple Code=v==============*/\n");
                 // Output all of the statements in a critical section
@@ -947,7 +892,7 @@ public class CriticalSectionBlock
 
 
             // Output the summary of methods found in Critical section.
-            File criticalSectionSummary = new File("/Users/michaelshah/Documents/sootDump/"+projectName+"/"+directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_Summary.txt");
+            File criticalSectionSummary = new File(dumpDiretory+projectName+"/"+directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_Summary.txt");
             writerCriticalSectionSummary = new FileWriter(criticalSectionSummary);
                 // Output a summary of all of the methods in a critical section
                 writerCriticalSectionSummary.write("//*==============v=Summary=v==============*/\n");
@@ -959,7 +904,7 @@ public class CriticalSectionBlock
 
 
             // Output the statistics of how many of each statements are found in critical section
-            File jimpleStatisticsSectionSummary = new File("/Users/michaelshah/Documents/sootDump/"+projectName+"/"+directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_jimpleStatistics.txt");
+            File jimpleStatisticsSectionSummary = new File(dumpDiretory+projectName+"/"+directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_jimpleStatistics.txt");
             writerJimpleStatistics = new FileWriter(jimpleStatisticsSectionSummary);
                 String []statementSummary = this.getStatementTypes();
                 writerJimpleStatistics.write("//*==============v=Jimple Statement Statistics=v==============*/\n");
@@ -986,7 +931,7 @@ public class CriticalSectionBlock
 
 
             // Output Jimple code with annotations.
-            File fileAnnotatedJimple = new File("/Users/michaelshah/Documents/sootDump/"+projectName+"/"+directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_JimpleCode_Annotated.jimple");
+            File fileAnnotatedJimple = new File(dumpDiretory+projectName+"/"+directoryName+"/"+nameOfCriticalSection+"/"+nameOfCriticalSection+"_JimpleCode_Annotated.jimple");
             writerAnnotatedJimple = new FileWriter(fileAnnotatedJimple);
                 writerAnnotatedJimple.write("//* (These are the statements within a single critical sections body)*/\n\n");
                 
@@ -1000,7 +945,7 @@ public class CriticalSectionBlock
 
 
             // Output all of the method calls in a list in the critical seciton
-            File newFile = new File("/Users/michaelshah/Documents/sootDump/"+projectName+"/"+directoryName+"/" + nameOfCriticalSection +"/"+ nameOfCriticalSection + ".methodCalls");
+            File newFile = new File(dumpDiretory+projectName+"/"+directoryName+"/" + nameOfCriticalSection +"/"+ nameOfCriticalSection + ".methodCalls");
             newFile.createNewFile();
             writerMethodCalls = new FileWriter(newFile);
                 String []methodSummary = this.getMethods();
@@ -1014,7 +959,7 @@ public class CriticalSectionBlock
             writerMethodCalls.close();    
 
             // Output all of the method call information
-            File methodInfoFile = new File("/Users/michaelshah/Documents/sootDump/"+projectName+"/"+directoryName+"/" + nameOfCriticalSection +"/"+ nameOfCriticalSection + ".methodInfo");
+            File methodInfoFile = new File(dumpDiretory+projectName+"/"+directoryName+"/" + nameOfCriticalSection +"/"+ nameOfCriticalSection + ".methodInfo");
             methodInfoFile.createNewFile();
             writerMethodInfo = new FileWriter(methodInfoFile);
                 writerMethodInfo.write("//*==============v=Methods Info and Statistics=v==============*/\n");
