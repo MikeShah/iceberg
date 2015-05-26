@@ -1,0 +1,2 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+-,=SUM(B2:B0),=SUM(C2:C0),=SUM(D2:D0),=SUM(E2:E0),=AVERAGE(F2:F0),=SUM(G2:G0),=SUM(H2:H0),=AVERAGE(I2:I0),=SUM(J2:J0)

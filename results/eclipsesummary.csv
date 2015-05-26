@@ -1,0 +1,26 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<org.eclipse.osgi.baseadaptor.loader.ClasspathEntry: void addUserObject(org.eclipse.osgi.framework.util.KeyedElement)>",1,15,0,0,0.93333334,0,0,0.0,122
+"<org.eclipse.osgi.framework.eventmgr.ListenerQueue: void dispatchEventAsynchronous(int,java.lang.Object)>",7,18,1,1,0.6111111,0,7,1.0,66
+"<org.eclipse.osgi.framework.internal.core.BundleContextImpl: void addBundleListener(org.osgi.framework.BundleListener)>",4,13,0,1,0.6923077,1,6,0.85714287,52
+"<org.eclipse.osgi.framework.internal.core.BundleContextImpl: void close()>",0,0,0,0,0.0,0,0,0.0,0
+"<org.eclipse.osgi.framework.internal.core.BundleContextImpl: void removeBundleListener(org.osgi.framework.BundleListener)>",1,1,0,0,0.0,0,0,0.0,0
+"<org.eclipse.osgi.framework.internal.core.Framework: void close()>",5,3158,2,52,0.9984167,0,685,1.0,15133
+"<org.eclipse.osgi.framework.internal.core.Framework: void publishBundleEventPrivileged(org.osgi.framework.BundleEvent)>",3,25,1,1,0.88,0,5,1.0,83
+"<org.eclipse.osgi.framework.internal.core.PackageAdminImpl: org.eclipse.osgi.framework.internal.core.AbstractBundle[] processDelta(org.eclipse.osgi.service.resolver.BundleDelta[],boolean,org.eclipse.osgi.service.resolver.State)>",1,4098,0,92,0.999756,0,979,1.0,21347
+"<org.eclipse.osgi.framework.internal.core.PackageAdminImpl: void doResolveBundles(org.eclipse.osgi.framework.internal.core.AbstractBundle[],boolean)>",17,175,1,4,0.9028571,1,47,0.9791667,963
+"<org.eclipse.osgi.internal.loader.BundleLoader: org.eclipse.osgi.internal.loader.PackageSource findRequiredSource(java.lang.String,org.eclipse.osgi.framework.util.KeyedHashSet)>",1,15,0,0,0.93333334,0,0,0.0,122
+"<org.eclipse.osgi.internal.loader.BundleLoader: void unlock()>",2,2,0,0,0.0,0,0,0.0,0
+"<org.eclipse.osgi.internal.loader.SystemBundleLoader: void attachFragment(org.eclipse.osgi.framework.internal.core.BundleFragment)>",1,156,0,0,0.99358976,0,13,1.0,1124
+"<org.eclipse.osgi.internal.permadmin.SecurityRow$Decision: void handleImmutable(org.osgi.service.condpermadmin.Condition,boolean,boolean)>",1,145,0,0,0.99310344,0,13,1.0,1081
+"<org.eclipse.osgi.internal.permadmin.SecurityRow: org.eclipse.osgi.internal.permadmin.SecurityRow$Decision evaluate(org.eclipse.osgi.internal.permadmin.BundlePermissions,java.security.Permission)>",1,145,0,0,0.99310344,0,13,1.0,1081
+"<org.eclipse.osgi.internal.resolver.BundleDescriptionImpl: void unload()>",1,1,0,0,0.0,0,0,0.0,19
+"<org.eclipse.osgi.internal.resolver.StateImpl: boolean setPlatformProperties(java.util.Dictionary[],boolean)>",5,5,0,0,0.0,0,0,0.0,0
+"<org.eclipse.osgi.internal.service.security.KeyStoreTrustEngine: java.security.cert.Certificate findTrustAnchor(java.security.cert.Certificate[])>",4,36,0,4,0.8888889,0,20,1.0,176
+"<org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl: boolean ungetService(org.eclipse.osgi.framework.internal.core.BundleContextImpl)>",2,2,0,0,0.0,0,0,0.0,0
+"<org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl: void register(java.util.Dictionary)>",1,3199,0,72,0.9996874,0,701,1.0,15367
+"<org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl: void releaseService(org.eclipse.osgi.framework.internal.core.BundleContextImpl)>",1,3295,0,77,0.9996965,0,730,1.0,15793
+"<org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl: void unregister()>",0,0,0,0,0.0,0,0,0.0,0
+"<org.osgi.util.tracker.BundleTracker: void open()>",4,8,0,0,0.5,0,2,1.0,48
+"<org.osgi.util.tracker.ServiceTracker: void close()>",1,1,0,0,0.0,0,0,0.0,0
+"<org.osgi.util.tracker.ServiceTracker: void open(boolean)>",6,14,0,0,0.5714286,0,2,1.0,70
+-,=SUM(B2:B24),=SUM(C2:C24),=SUM(D2:D24),=SUM(E2:E24),=AVERAGE(F2:F24),=SUM(G2:G24),=SUM(H2:H24),=AVERAGE(I2:I24),=SUM(J2:J24)

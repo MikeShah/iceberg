@@ -1,0 +1,21 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<simbad.sim.Eye$OffScreenCanvas3D: void postSwap()>",4,569,0,3,0.9929701,0,236,1.0,3375
+"<simbad.sim.Eye$OffScreenCanvas3D: void render()>",1,1,0,0,0.0,0,0,0.0,0
+"<simbad.sim.Eye: void copyVisionImage(java.awt.image.BufferedImage)>",2,567,0,3,0.99647266,0,236,1.0,3375
+"<simbad.sim.Eye: void copyVisionImage(simbad.sim.SensorMatrix)>",2,138,0,2,0.98550725,0,59,1.0,719
+"<simbad.sim.Lock: void lock()>",1,2,0,0,0.5,0,0,0.0,3
+"<simbad.sim.Lock: void unlock()>",1,1,0,0,0.0,0,0,0.0,0
+"<simbad.sim.MouseOrbiter: void integrateTransforms()>",16,28,0,0,0.42857143,0,1,1.0,43
+"<simbad.sim.MouseOrbiter: void setRotationCenter(javax.vecmath.Point3d)>",1,1,0,0,0.0,0,0,0.0,0
+"<simbad.sim.SimpleAgent: java.lang.String asString()>",0,0,0,0,0.0,0,0,0.0,0
+"<simbad.sim.Simulator: void dispose()>",5,2962,1,50,0.99831194,0,679,1.0,14316
+"<simbad.sim.Simulator: void initBehaviors()>",6,93,0,4,0.9354839,0,34,1.0,445
+"<simbad.sim.Simulator: void performSimulationStep()>",3,8820,2,154,0.99965984,0,1943,1.0,42508
+"<simbad.sim.Simulator: void resetSimulation()>",7,5946,1,102,0.99882275,0,1359,1.0,28708
+"<simbad.sim.Simulator: void restartSimulation()>",4,11758,3,202,0.9996598,0,2649,1.0,56840
+"<simbad.sim.Simulator: void simulateOneStep()>",44,4609,8,88,0.9904535,1,1258,0.9992057,22850
+"<simbad.sim.Simulator: void startBackgroundMode()>",3,5877,1,99,0.99948955,1,1331,0.9992492,28446
+"<simbad.sim.Simulator: void startSimulation()>",6,8893,2,152,0.99932534,2,2028,0.9990148,43076
+"<simbad.sim.Simulator: void stopBackgroundMode()>",1,1,0,0,0.0,0,0,0.0,3
+"<simbad.sim.Simulator: void stopSimulation()>",2,2875,0,48,0.99930435,0,645,1.0,13889
+-,=SUM(B2:B19),=SUM(C2:C19),=SUM(D2:D19),=SUM(E2:E19),=AVERAGE(F2:F19),=SUM(G2:G19),=SUM(H2:H19),=AVERAGE(I2:I19),=SUM(J2:J19)

@@ -1,0 +1,30 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<modbuspal.automation.Automation: void resume()>",1,1,0,0,0.0,0,0,0.0,0
+"<modbuspal.automation.Automation: void run()>",1,2,0,0,0.5,0,0,0.0,3
+"<modbuspal.automation.Automation: void stop()>",1,1,0,0,0.0,0,0,0.0,0
+"<modbuspal.link.ModbusSerialLink: void run()>",1,1,0,0,0.0,0,0,0.0,0
+"<modbuspal.link.ModbusSerialLink: void serialEvent(gnu.io.SerialPortEvent)>",1,1,0,0,0.0,0,0,0.0,0
+"<modbuspal.main.AppConsole: void clearButtonActionPerformed(java.awt.event.ActionEvent)>",2,2,0,0,0.0,0,0,0.0,0
+"<modbuspal.main.IdGenerator: long createID()>",0,0,0,0,0.0,0,0,0.0,0
+"<modbuspal.main.IdGenerator: void load(org.w3c.dom.Document)>",0,0,0,0,0.0,0,0,0.0,0
+"<modbuspal.main.IdGenerator: void reset()>",0,0,0,0,0.0,0,0,0.0,0
+"<modbuspal.main.IdGenerator: void save(java.io.OutputStream)>",7,358,1,10,0.98044693,1,150,0.9933775,1968
+"<modbuspal.main.ModbusPalProject: void addModbusPalListener(modbuspal.main.ModbusPalListener)>",2,24,0,1,0.9166667,0,5,1.0,164
+"<modbuspal.main.ModbusPalProject: void addScriptListener(modbuspal.script.ScriptListener)>",2,24,0,1,0.9166667,0,5,1.0,164
+"<modbuspal.main.ModbusPalProject: void notifyAutomationAdded(modbuspal.automation.Automation,int)>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void notifyAutomationRemoved(modbuspal.automation.Automation)>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void notifyExceptionResponse()>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void notifyPDUnotServiced()>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void notifyPDUprocessed()>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void notifyScriptAdded(modbuspal.script.ScriptRunner)>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void notifyScriptRemoved(modbuspal.script.ScriptRunner)>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void notifySlaveAdded(modbuspal.slave.ModbusSlave)>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void notifySlaveRemoved(modbuspal.slave.ModbusSlave)>",4,7,0,0,0.42857143,0,3,1.0,20
+"<modbuspal.main.ModbusPalProject: void removeModbusPalListener(modbuspal.main.ModbusPalListener)>",2,8,0,0,0.75,0,0,0.0,91
+"<modbuspal.main.ModbusPalProject: void removeScriptListener(modbuspal.script.ScriptListener)>",2,8,0,0,0.75,0,0,0.0,91
+"<modbuspal.main.TiltLabel: void run()>",4,14564,0,312,0.99972534,0,3212,1.0,72580
+"<modbuspal.main.TiltLabel: void tilt(int)>",0,0,0,0,0.0,0,0,0.0,0
+"<modbuspal.master.ModbusMaster: void stop()>",1,1,0,0,0.0,0,0,0.0,0
+"<modbuspal.recorder.ModbusPalRecorder: void record(java.lang.String,int,byte[],int,int)>",17,50044,0,649,0.9996603,2,12809,0.9998439,237514
+"<modbuspal.recorder.ModbusPalRecorder: void setOutput(java.io.FileWriter)>",1,652,0,15,0.99846625,0,249,1.0,4467
+-,=SUM(B2:B28),=SUM(C2:C28),=SUM(D2:D28),=SUM(E2:E28),=AVERAGE(F2:F28),=SUM(G2:G28),=SUM(H2:H28),=AVERAGE(I2:I28),=SUM(J2:J28)

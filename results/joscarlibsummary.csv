@@ -1,0 +1,4 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<JOscarLib.Core.OscarClient: void disconnect()>",2,74,0,2,0.972973,0,40,1.0,386
+"<JOscarLib.Core.OscarConnection: void sendFlap(JOscarLib.Flap)>",10,346,3,15,0.97109824,0,144,1.0,1775
+-,=SUM(B2:B2),=SUM(C2:C2),=SUM(D2:D2),=SUM(E2:E2),=AVERAGE(F2:F2),=SUM(G2:G2),=SUM(H2:H2),=AVERAGE(I2:I2),=SUM(J2:J2)

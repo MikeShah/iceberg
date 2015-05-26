@@ -1,0 +1,20 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<jace.apple2e.RAM128k: void configureActiveMemory()>",67,199,0,0,0.6633166,0,0,0.0,1169
+"<jace.apple2e.Speaker$2: void run()>",0,0,0,0,0.0,0,0,0.0,0
+"<jace.apple2e.Speaker: void tick()>",0,0,0,0,0.0,0,0,0.0,0
+"<jace.core.Device: void setRun(boolean)>",0,0,0,0,0.0,0,0,0.0,0
+"<jace.core.Motherboard: boolean suspend()>",6,8,0,1,0.25,0,0,0.0,25
+"<jace.core.Motherboard: void reconfigure()>",18,19445,1,313,0.99907434,1,4658,0.99978536,93356
+"<jace.core.Motherboard: void resume()>",3,5,0,1,0.4,0,0,0.0,24
+"<jace.core.SoundMixer: javax.sound.sampled.SourceDataLine getLine(java.lang.Object)>",9,3008,0,48,0.99700797,0,671,1.0,14236
+"<jace.core.SoundMixer: void reconfigure()>",10,34374,0,530,0.99970907,0,8380,1.0,166917
+"<jace.hardware.ConsoleProbe: void performRead()>",0,0,0,0,0.0,0,0,0.0,0
+"<jace.ui.AbstractEmulatorFrame: void addIndicator(java.lang.Object,javax.swing.ImageIcon,int)>",8,371,0,10,0.97843665,1,126,0.992126,3200
+"<jace.ui.AbstractEmulatorFrame: void addKeyListener(java.awt.event.KeyListener)>",3,17,2,0,0.8235294,0,4,1.0,116
+"<jace.ui.AbstractEmulatorFrame: void redrawIndicators()>",16,3432,0,51,0.995338,0,729,1.0,17473
+"<jace.ui.AbstractEmulatorFrame: void removeIndicator(java.lang.Object,javax.swing.ImageIcon,boolean)>",3,3,0,0,0.0,0,0,0.0,0
+"<jace.ui.AbstractEmulatorFrame: void removeIndicators(java.lang.Object)>",6,6,0,0,0.0,0,0,0.0,0
+"<jace.ui.EmulatorFrame: void addKeyListener(java.awt.event.KeyListener)>",3,27,3,2,0.8888889,0,6,1.0,180
+"<jace.ui.EmulatorFrame: void doRedrawIndicators(java.util.Set)>",1,1,0,0,0.0,0,0,0.0,0
+"<jace.ui.EmulatorFrame: void repaintIndicators()>",5,8096,0,157,0.99938244,0,1794,1.0,40955
+-,=SUM(B2:B18),=SUM(C2:C18),=SUM(D2:D18),=SUM(E2:E18),=AVERAGE(F2:F18),=SUM(G2:G18),=SUM(H2:H18),=AVERAGE(I2:I18),=SUM(J2:J18)

@@ -1,0 +1,12 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<com.dosse.gravity2d.demo.GUI: void render(java.awt.Component,java.awt.Graphics)>",52,13869,0,267,0.9962506,2,3386,0.9994097,67997
+"<com.dosse.gravity2d.Simulation$SlaveThread: void add(com.dosse.gravity2d.Point)>",2,28,0,2,0.9285714,1,9,0.9,159
+"<com.dosse.gravity2d.Simulation$SlaveThread: void remove(com.dosse.gravity2d.Point)>",2,12,0,1,0.8333333,1,4,0.8,86
+"<com.dosse.gravity2d.Simulation$SlaveThread: void reset()>",2,8,0,1,0.75,1,4,0.8,47
+"<com.dosse.gravity2d.Simulation$SlaveThread: void run()>",2,24,0,1,0.9166667,0,5,1.0,135
+"<com.dosse.gravity2d.Simulation$SlaveThread: void setState(int)>",1,7,0,1,0.85714287,1,4,0.8,34
+"<com.dosse.gravity2d.Simulation: void add(com.dosse.gravity2d.Point)>",1,21,0,1,0.95238096,0,5,1.0,125
+"<com.dosse.gravity2d.Simulation: void remove(com.dosse.gravity2d.Point)>",1,21,0,1,0.95238096,0,5,1.0,125
+"<com.dosse.gravity2d.Simulation: void reset()>",3,3,0,0,0.0,0,0,0.0,29
+"<com.dosse.gravity2d.Simulation: void run()>",7,27,0,1,0.7407407,0,8,1.0,187
+-,=SUM(B2:B10),=SUM(C2:C10),=SUM(D2:D10),=SUM(E2:E10),=AVERAGE(F2:F10),=SUM(G2:G10),=SUM(H2:H10),=AVERAGE(I2:I10),=SUM(J2:J10)

@@ -1,0 +1,6 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<net.sourceforge.pmd.typeresolution.PMDASMClassLoader: java.util.Map getImportedClasses(java.lang.String)>",28,16209,0,206,0.99827254,8,4300,0.998143,78876
+"<net.sourceforge.pmd.util.Benchmark: void mark(int,java.lang.String,long,long)>",14,439,0,14,0.9681093,5,189,0.97422683,2315
+"<test.net.sourceforge.pmd.testframework.SimpleAggregatorTst$CustomXmlTestClassMethodsRunner: void addFailure(org.junit.runner.notification.Failure)>",1,1,0,0,0.0,0,0,0.0,0
+"<test.net.sourceforge.pmd.testframework.SimpleAggregatorTst$CustomXmlTestClassMethodsRunner: void run(org.junit.runner.notification.RunNotifier)>",1,1,0,0,0.0,0,0,0.0,0
+-,=SUM(B2:B4),=SUM(C2:C4),=SUM(D2:D4),=SUM(E2:E4),=AVERAGE(F2:F4),=SUM(G2:G4),=SUM(H2:H4),=AVERAGE(I2:I4),=SUM(J2:J4)

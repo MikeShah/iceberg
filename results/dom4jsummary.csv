@@ -1,0 +1,19 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<org.dom4j.datatype.SchemaParser: void internalBuild(org.dom4j.Document)>",45,22546,12,607,0.9980041,8,5455,0.9985356,107955
+"<org.dom4j.DocumentFactory: org.dom4j.DocumentFactory getInstance()>",2,2951,0,49,0.99932224,0,672,1.0,14262
+"<org.dom4j.swing.XMLTableDefinition: java.lang.Object getValueAt(java.lang.Object,int)>",1,5,0,0,0.8,0,0,0.0,16
+"<org.dom4j.tree.ConcurrentReaderHashMap: boolean findAndRemoveEntry(java.util.Map$Entry)>",5,23,0,0,0.7826087,0,4,1.0,275
+"<org.dom4j.tree.ConcurrentReaderHashMap: boolean isEmpty()>",0,0,0,0,0.0,0,0,0.0,0
+"<org.dom4j.tree.ConcurrentReaderHashMap: int capacity()>",0,0,0,0,0.0,0,0,0.0,0
+"<org.dom4j.tree.ConcurrentReaderHashMap: int size()>",0,0,0,0,0.0,0,0,0.0,0
+"<org.dom4j.tree.ConcurrentReaderHashMap: java.lang.Object clone()>",3,11,0,1,0.72727275,2,5,0.71428573,48
+"<org.dom4j.tree.ConcurrentReaderHashMap: java.lang.Object get(java.lang.Object)>",0,0,0,0,0.0,0,0,0.0,0
+"<org.dom4j.tree.ConcurrentReaderHashMap: void clear()>",1,1,0,0,0.0,0,0,0.0,13
+"<org.dom4j.tree.ConcurrentReaderHashMap: void putAll(java.util.Map)>",9,39,0,1,0.7692308,0,14,1.0,419
+"<org.dom4j.tree.ConcurrentReaderHashMap: void readObject(java.io.ObjectInputStream)>",6,18493,0,199,0.9996756,0,4910,1.0,87445
+"<org.dom4j.tree.ConcurrentReaderHashMap: void recordModification(java.lang.Object)>",0,0,0,0,0.0,0,0,0.0,0
+"<org.dom4j.tree.ConcurrentReaderHashMap: void writeObject(java.io.ObjectOutputStream)>",5,9205,0,152,0.9994568,0,1910,1.0,44978
+"<org.dom4j.tree.NamespaceCache: java.util.Map getURICache(java.lang.String)>",3,363,0,13,0.9917355,1,124,0.992,3207
+"<org.dom4j.tree.NamespaceCache: org.dom4j.Namespace get(java.lang.String)>",5,11,0,0,0.54545456,1,6,0.85714287,50
+"<org.dom4j.tree.NamespaceCache: org.dom4j.Namespace get(java.lang.String,java.lang.String)>",5,11,0,0,0.54545456,1,6,0.85714287,50
+-,=SUM(B2:B17),=SUM(C2:C17),=SUM(D2:D17),=SUM(E2:E17),=AVERAGE(F2:F17),=SUM(G2:G17),=SUM(H2:H17),=AVERAGE(I2:I17),=SUM(J2:J17)

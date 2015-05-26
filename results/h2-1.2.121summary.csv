@@ -1,0 +1,11 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<org.h2.expression.Function: org.h2.value.Value getSimpleValue(org.h2.engine.Session,org.h2.value.Value,org.h2.expression.Expression[])>",3,15614,0,175,0.9998079,0,3359,1.0,66429
+"<org.h2.jdbc.JdbcConnection: void close()>",14,28,0,0,0.5,0,0,0.0,71
+"<org.h2.schema.Sequence: void flush(org.h2.engine.Session)>",2,50498,1,528,0.9999604,0,9210,1.0,210203
+"<org.h2.table.Column: org.h2.value.Value validateConvertUpdateSequence(org.h2.engine.Session,org.h2.value.Value)>",1,1,0,0,0.0,0,0,0.0,0
+"<org.h2.table.Column: void addCheckConstraint(org.h2.engine.Session,org.h2.expression.Expression)>",1,1,0,0,0.0,0,0,0.0,0
+"<org.h2.table.TableLinkConnection: void close()>",1,9,0,0,0.8888889,0,0,0.0,90
+"<org.h2.util.RandomUtils: java.security.SecureRandom getSecureRandom()>",1,2,1,0,0.5,0,0,0.0,5
+"<org.h2.value.ValueLob: void deleteFile(org.h2.store.DataHandler,java.lang.String)>",1,25,0,0,0.96,0,3,1.0,116
+"<org.h2.value.ValueLob: void renameFile(org.h2.store.DataHandler,java.lang.String,java.lang.String)>",1,25,0,0,0.96,0,3,1.0,117
+-,=SUM(B2:B9),=SUM(C2:C9),=SUM(D2:D9),=SUM(E2:E9),=AVERAGE(F2:F9),=SUM(G2:G9),=SUM(H2:H9),=AVERAGE(I2:I9),=SUM(J2:J9)

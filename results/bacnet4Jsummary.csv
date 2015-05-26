@@ -1,0 +1,23 @@
+Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR
+"<com.serotonin.bacnet4j.LocalDevice: void initialize()>",2,3,0,0,0.33333334,0,0,0.0,8
+"<com.serotonin.bacnet4j.LocalDevice: void terminate()>",3,4,0,0,0.25,0,0,0.0,4
+"<com.serotonin.bacnet4j.npdu.ip.InetAddrCache: java.net.InetSocketAddress get(java.net.InetAddress,int)>",5,108,0,4,0.9537037,1,53,0.9814815,543
+"<com.serotonin.bacnet4j.npdu.ip.WaitingRoom$Member: com.serotonin.bacnet4j.apdu.APDU getAPDU(long)>",3,6,0,0,0.5,0,0,0.0,57
+"<com.serotonin.bacnet4j.npdu.ip.WaitingRoom$Member: void setAPDU(com.serotonin.bacnet4j.apdu.APDU)>",2,5,0,0,0.6,0,2,1.0,33
+"<com.serotonin.bacnet4j.npdu.ip.WaitingRoom: com.serotonin.bacnet4j.npdu.ip.WaitingRoom$Key enterClient(java.net.InetSocketAddress,com.serotonin.bacnet4j.type.constructed.Address)>",7,395,0,7,0.98227847,2,115,0.982906,2409
+"<com.serotonin.bacnet4j.npdu.ip.WaitingRoom: com.serotonin.bacnet4j.npdu.ip.WaitingRoom$Key enterServer(java.net.InetSocketAddress,com.serotonin.bacnet4j.type.constructed.Address,byte)>",7,395,0,7,0.98227847,2,115,0.982906,2409
+"<com.serotonin.bacnet4j.npdu.ip.WaitingRoom: void leave(com.serotonin.bacnet4j.npdu.ip.WaitingRoom$Key)>",1,9,0,0,0.8888889,0,0,0.0,90
+"<com.serotonin.bacnet4j.npdu.mstp.MasterNode: void answerDataRequest()>",16,38275,0,508,0.999582,2,9816,0.9997963,184744
+"<com.serotonin.bacnet4j.npdu.mstp.MasterNode: void queueFrame(com.serotonin.bacnet4j.npdu.mstp.FrameType,byte,byte[])>",1,1,0,0,0.0,0,0,0.0,0
+"<com.serotonin.bacnet4j.npdu.mstp.MasterNode: void setReplyFrame(com.serotonin.bacnet4j.npdu.mstp.FrameType,byte,byte[])>",2,108,0,2,0.9814815,1,45,0.9782609,549
+"<com.serotonin.bacnet4j.npdu.mstp.MasterNode: void useToken()>",2,2,0,0,0.0,0,0,0.0,0
+"<com.serotonin.bacnet4j.npdu.mstp.SlaveNode: void answerDataRequest()>",8,19157,0,254,0.9995824,1,4916,0.9997966,92433
+"<com.serotonin.bacnet4j.npdu.mstp.SlaveNode: void setReplyFrame(com.serotonin.bacnet4j.npdu.mstp.FrameType,byte,byte[])>",2,3,0,0,0.33333334,1,1,0.5,21
+"<com.serotonin.bacnet4j.obj.BACnetObject: void removeCovSubscription(com.serotonin.bacnet4j.type.constructed.Address,com.serotonin.bacnet4j.type.primitive.UnsignedInteger)>",2,30,0,0,0.93333334,0,3,1.0,215
+"<com.serotonin.bacnet4j.obj.BACnetObject: void setPropertyImpl(com.serotonin.bacnet4j.type.enumerated.PropertyIdentifier,com.serotonin.bacnet4j.type.Encodable)>",7,11076,0,129,0.999368,0,2877,1.0,52320
+"<com.serotonin.bacnet4j.transport.WaitingRoom$Member: com.serotonin.bacnet4j.apdu.APDU getAPDU(long)>",3,6,0,0,0.5,0,0,0.0,57
+"<com.serotonin.bacnet4j.transport.WaitingRoom$Member: void setAPDU(com.serotonin.bacnet4j.apdu.APDU)>",2,5,0,0,0.6,0,2,1.0,33
+"<com.serotonin.bacnet4j.transport.WaitingRoom: com.serotonin.bacnet4j.transport.WaitingRoomKey enterClient(com.serotonin.bacnet4j.type.constructed.Address,com.serotonin.bacnet4j.type.primitive.OctetString)>",7,395,0,7,0.98227847,2,115,0.982906,2409
+"<com.serotonin.bacnet4j.transport.WaitingRoom: com.serotonin.bacnet4j.transport.WaitingRoomKey enterServer(com.serotonin.bacnet4j.type.constructed.Address,com.serotonin.bacnet4j.type.primitive.OctetString,byte)>",7,395,0,7,0.98227847,2,115,0.982906,2409
+"<com.serotonin.bacnet4j.transport.WaitingRoom: void leave(com.serotonin.bacnet4j.transport.WaitingRoomKey)>",1,9,0,0,0.8888889,0,0,0.0,90
+-,=SUM(B2:B21),=SUM(C2:C21),=SUM(D2:D21),=SUM(E2:E21),=AVERAGE(F2:F21),=SUM(G2:G21),=SUM(H2:H21),=AVERAGE(I2:I21),=SUM(J2:J21)
