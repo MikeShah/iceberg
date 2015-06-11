@@ -11,8 +11,10 @@ from subprocess import call
 import threading
 
 def main():
-
-	searchDirectory = "/Users/michaelshah/Documents/sootDump/"
+	
+	if len(sys.argv) <= 0:
+		print "error, first argument should specify where to search for .csv files"
+	searchDirectory = sys.argv[0] # "/Users/michaelshah/Documents/sootDump/"
 
 	directories = os.listdir(searchDirectory)
 
