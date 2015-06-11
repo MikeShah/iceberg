@@ -21,7 +21,7 @@ def main():
 		if os.path.isdir(searchDirectory+d+'/'):
 			SummaryFile = open(searchDirectory+d+"summary.csv",'w')
 			totalLines = 0
-			SummaryFile.write('Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,Number of allocations in first level,Total # of allocations,Growth from first level,total # lines of IR'+'\n')
+			SummaryFile.write('Critical Section Name:,# of method calls in first level,total # of method calls,# of synchronized method calls in first level,total # of sync method calls,Growth from first level,# of Java Library Calls in first level, Total Number of Java Library Calls,Java Call Growth,Number of allocations in first level,Total # of allocations,Allocation Growth from first level,total # lines of IR'+'\n')
 
 			print '================================================='
 			print '======vvvv======Bench marks:'+d+'======vvvv========='
@@ -63,7 +63,10 @@ def main():
 				rowH = '=SUM(H2:H'+str(totalLines)+')'
 				rowI = '=AVERAGE(I2:I'+str(totalLines)+')'
 				rowJ = '=SUM(J2:J'+str(totalLines)+')'
-				SummaryFile.write(rowA+','+rowB+','+rowC+','+rowD+','+rowE+','+rowF+','+rowG+','+rowH+','+rowI+','+rowJ)
+				rowK = '=SUM(K2:K'+str(totalLines)+')'
+				rowL = '=AVERAGE(L2:L'+str(totalLines)+')'
+				rowM = '=SUM(M2:M'+str(totalLines)+')'
+				SummaryFile.write(rowA+','+rowB+','+rowC+','+rowD+','+rowE+','+rowF+','+rowG+','+rowH+','+rowI+','+rowJ+','+rowK+','+rowL+','+rowM)
 				SummaryFile.close()
 
 
