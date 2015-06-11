@@ -8,13 +8,23 @@
 
 # (2) Run Iceberg on several benchmarks
 
+	# avrora
+	# Found here: http://sourceforge.net/projects/avrora/?source=typ_redirect
+	# Notes:
+# 	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:avrora}" -process-dir "./benchmarks/avrora/avrora-beta-1.7.117.jar" -soot-class-path . -allow-phantom-refs -w -f J
+
 	# batik
 # (not working yet)	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:batik}" -process-dir "./benchmarks/batik/batik-1.7/batik.jar" -process-dir "./benchmarks/batik/batik-1.7/batik-ttf2svg.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# dom4j
 	# Found here: http://sourceforge.net/projects/dom4j/?source=directory
 	# Notes:
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:dom4j}" -process-dir "./benchmarks/dom4j/dom4j-1.6.1/dom4j-1.6.1.jar" -process-dir "./benchmarks/dom4j/dom4j-1.6.1/dom4j-1.6.1.jar" -soot-class-path . -dump-cfg ALL -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:dom4j}" -process-dir "./benchmarks/dom4j/dom4j-1.6.1/dom4j-1.6.1.jar" -process-dir "./benchmarks/dom4j/dom4j-1.6.1/dom4j-1.6.1.jar" -soot-class-path . -dump-cfg ALL -allow-phantom-refs -w -f J
+
+	# fop
+	# Found here: http://apache.mesi.com.ar/xmlgraphics/fop/binaries/
+	# Notes:
+#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:fop}" -process-dir "./benchmarks/fop/fop-1.1/build/fop.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 
 # 	geotools
@@ -27,7 +37,7 @@
 	# Gravity2D
 	# Found here: http://sourceforge.net/projects/gravity2d/postdownload?source=dlp
 	# Notes: 
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:gravity2D}" -process-dir "./benchmarks/Gravity2D/Gravity2D-beta2.jar" -process-dir "./benchmarks/Gravity2D/Gravity2D-beta2.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:gravity2D}" -process-dir "./benchmarks/Gravity2D/Gravity2D-beta2.jar" -process-dir "./benchmarks/Gravity2D/Gravity2D-beta2.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# h2
 	# Found Here:
@@ -53,22 +63,22 @@
 	# Java Decompiler (jdec)
 	# Found here: http://sourceforge.net/projects/jdec/
 	# Notes:
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:jdec}" -process-dir "./benchmarks/jdec/jdec20-src.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:jdec}" -process-dir "./benchmarks/jdec/jdec20-src.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# jmonkey
 	# Found here: 
-	# Notes:
-	nice -n 19 java -Xmx2g -cp "soot-trunk3.jar": lockpatterns.MyMain -process-dir "{project-name:jmonkey}" -process-dir "./benchmarks/jmonkey/jmonkeyengine-read-only/engine/dist/jMonkeyEngine3.jar" -process-dir "./benchmarks/jmonkey/jmonkeyengine-read-only/engine/dist/lib" -soot-class-path . -allow-phantom-refs -w -f J
+	# Notes: Does not work quite yet...probably need to add more classes
+#	nice -n 19 java -Xmx2g -cp "soot-trunk3.jar": lockpatterns.MyMain -process-dir "{project-name:jmonkey}" -process-dir "./benchmarks/jmonkey/jmonkeyengine-read-only/engine/dist/jMonkeyEngine3.jar" -process-dir "./benchmarks/jmonkey/jmonkeyengine-read-only/engine/dist/lib" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# joscarlib
 	# Found here: 
 	# Notes:
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:joscarlib}" -process-dir "./benchmarks/joscarlib/JOscarLib_0.5.jar" -process-dir "./benchmarks/joscarlib/JOscarLib_0.5.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:joscarlib}" -process-dir "./benchmarks/joscarlib/JOscarLib_0.5.jar" -process-dir "./benchmarks/joscarlib/JOscarLib_0.5.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# JParallelLoops
 	# Found here:
 	# Notes: 
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:jparallelloops}" -process-dir "./benchmarks/JParallelLoops/JParallelLoops.jar" -process-dir "./benchmarks/JParallelLoops/JParallelLoops.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:jparallelloops}" -process-dir "./benchmarks/JParallelLoops/JParallelLoops.jar" -process-dir "./benchmarks/JParallelLoops/JParallelLoops.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# Jython
 	# Found here:
@@ -78,7 +88,7 @@
 	# microemulator
 	# Found here:
 	# Notes:
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:microemulator}" -process-dir "./benchmarks/microemulator/microemulator-2.0.4/microemulator.jar" -process-dir "./benchmarks/microemulator/microemulator-2.0.4/microemulator-sources.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:microemulator}" -process-dir "./benchmarks/microemulator/microemulator-2.0.4/microemulator.jar" -process-dir "./benchmarks/microemulator/microemulator-2.0.4/microemulator-sources.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# openjgraph
 	# (Found from the internet - not working yet)
@@ -88,18 +98,17 @@
 	# paw
 	# Found here:
 	# Notes:
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:paw}" -process-dir "./benchmarks/paw/paw-release-0.30/paw-gui.jar" -process-dir "./benchmarks/paw/paw-release-0.30/paw-server.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:paw}" -process-dir "./benchmarks/paw/paw-release-0.30/paw-gui.jar" -process-dir "./benchmarks/paw/paw-release-0.30/paw-server.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# Peers - Sips Softphone
 	# Found here: http://sourceforge.net/projects/peers/?source=directory
 	# Notes:
-	#nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:peers}" -process-dir "./benchmarks/peers/peers-gui-0.5/peers.jar" -soot-class-path . -allow-phantom-refs -w -f J
-
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:peers}" -process-dir "./benchmarks/peers/peers-gui-0.5/peers.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# pmd
 	# Found here:
 	# Notes: (Need to add more classes to get full program)
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:pmd}" -process-dir "./benchmarks/pmd/pmd-4.2.4/lib/pmd-4.2.4.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:pmd}" -process-dir "./benchmarks/pmd/pmd-4.2.4/lib/pmd-4.2.4.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 	# simbad
 	# Found from the internet
@@ -109,7 +118,16 @@
 	# sunflow
 	# Found Here:
 	# Notes:
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:sunflow}" -process-dir "./benchmarks/Sunflow/sunflow2/sunflow.jar" -process-dir "./benchmarks/Sunflow/sunflow2/janino.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:sunflow}" -process-dir "./benchmarks/Sunflow/sunflow2/sunflow.jar" -process-dir "./benchmarks/Sunflow/sunflow2/janino.jar" -soot-class-path . -allow-phantom-refs -w -f J
+
+#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:sunflow}" -process-dir "./benchmarks/Sunflow/sunflow2/sunflow.jar" -process-dir "./benchmarks/Sunflow/sunflow2/janino.jar" -soot-class-path . -allow-phantom-refs
+	# Build a new jar from the instrumented .class files in sootOutput
+	#jar cvf "./sootOutput/org/sunflow.jar" -C ./sootOutput/org/ .
+	
+	# Compile the instrumented class files
+	#javac -classpath janino.jar -sourcepath src -d classes -g:none -O src/*.java
+	# Run Sunflow
+	# java -cp classes;janino.jar -server -Xmx1024M SunflowGUI
 
 	# xalan
 	# Found here:
@@ -129,13 +147,13 @@
 	# bacnet4J
 	# Found here:
 	# Notes: 
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:bacnet4J}" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/bacnet4J.jar" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/bacnet4J.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:bacnet4J}" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/bacnet4J.jar" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/bacnet4J.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 # Hodoku
 	# Hodoku 
 	# Found here: 
 	# Notes: Soot is able to analyze successfully
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:Hodoku}" -process-dir "./benchmarks/hodoku.jar" -process-dir "./benchmarks/hodoku.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:Hodoku}" -process-dir "./benchmarks/hodoku.jar" -process-dir "./benchmarks/hodoku.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 # JMT-installer-0.9.1
 	# JMT-installer-0.9.1
@@ -147,30 +165,76 @@
 	# LWJGL 
 	# Found here: http://sourceforge.net/projects/java-game-lib/
 	# Notes: Program crashes half way through, may need to add other jars to classpath in order to fix.
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:lwjgl}" -process-dir "./benchmarks/lwjgl-2.9.3/jar/lwjgl.jar" -process-dir "./benchmarks/lwjgl-2.9.3/jar/lwjgl.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:lwjgl}" -process-dir "./benchmarks/lwjgl-2.9.3/jar/lwjgl.jar" -process-dir "./benchmarks/lwjgl-2.9.3/jar/lwjgl.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 # ModbusPal
 	# ModbusPal
 	# Found here:
 	# Notes: 
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:modbuspal}" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/ModbusPal.jar" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/ModbusPal.jar" -soot-class-path . -allow-phantom-refs -w -f J
-
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:modbuspal}" -process-dir "./benchmarks/ModbusPal.jar" -process-dir "./benchmarks/ModbusPal.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	
 # vijava55b20130927
 	# vijava55b20130927
 	# Found Here:
 	# Notes:
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:vijava55b20130927}" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/vijava55b20130927/vijava55b20130927.jar" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/vijava55b20130927/vijava55b20130927.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:vijava55b20130927}" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/vijava55b20130927/vijava55b20130927.jar" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/vijava55b20130927/vijava55b20130927.jar" -soot-class-path . -allow-phantom-refs -w -f J
 
 
 # ycad
 	# ycad 
 	# Found here:
 	# Notes: 
-#	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:ycad}" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/ycad-1.0.2/lib/ycad.jar" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/ycad-1.0.2/lib/ycad.jar" -soot-class-path . -allow-phantom-refs -w -f J
+	nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:ycad}" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/ycad-1.0.2/lib/ycad.jar" -process-dir "./benchmarks/UnprovenBenchmarks/JustDownloaded/ycad-1.0.2/lib/ycad.jar" -soot-class-path . -allow-phantom-refs -w -f J
+
+
+
+# DaCapo Benchmarks 
+#
+# Found Here: http://www.dacapobench.org/
+# Notes: http://www.dacapobench.org/benchmarks.html
+<<DACAPOBENCHMARKS
+
+
+#temporary directory in which to extract the benchmarks as input for Soot
+TEMP=./tmp/dacapo/dacapo-9.12-bach/jar/
+
+
+for BM in antlr-3.1.3 asm-3.1 batik-all.jar dacapo-tomcat daytrader eclipse fop h2-1.2.121 jython luindex lusearch pmd-4.2.5 sunflow-0.07.2 tomcat-juli xalan;
+do \
+
+#prepare benchmark
+echo preparing ${BM}...
+#rm -fr ${TEMP}
+#mkdir -p ${TEMP}
+#cp ${BM}.jar ${TEMP}
+#OLDDIR=`pwd`
+#cd ${TEMP}
+#jar xf ${BM}.jar
+#cd ${OLDDIR}
+
+#process benchmark
+echo processing ${BM}...
+
+PROJECTNAME="{project-name:"${BM}"}"
+
+#nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir "{project-name:avrora}" -process-dir "./benchmarks/avrora/avrora-beta-1.7.117.jar" -soot-class-path . -allow-phantom-refs -w -f J
+nice -n 19 java -Xmx2g -cp "soot-trunk2.jar": lockpatterns.MyMain -process-dir $PROJECTNAME -process-dir ${TEMP}${BM}/ -soot-class-path . -allow-phantom-refs -w -f J
+
+echo finished with ${BM}.
+
+done
+
+DACAPOBENCHMARKS
 
 
 # (3) Build summary of critical section statistics
-#	python TableBuilder.py
+	# Basically appends some Excel formulas to the bottom of the csv
+	# files generated from my Java source, so I do not have to clutter up
+	# that code.
+#	python TableBuilder.py /Users/michaelshah/Documents/sootDump/
+	
+# (4) Build a massive workbook with everything in it
+#	python OverallTable.py /Users/michaelshah/Documents/sootDump/ > /Users/michaelshah/Documents/sootDump/_BigTable.csv
 
 
 
@@ -195,3 +259,4 @@
 
 # Run our program
 #java -jar Iceberg.jar -cp .:"./lockpatterns/"
+

@@ -2,6 +2,7 @@
 
 import csv
 import os
+import sys
 
 # Special pyexcel library (use 'pip install pyexcel' to install)
 from pyexcel.cookbook import merge_all_to_a_book
@@ -12,7 +13,10 @@ def main():
 
 	fileName= "_BigTable.csv"
 	# Determine where we are dumping our files
-	searchDirectory = "/Users/michaelshah/Documents/sootDump/"
+	if len(sys.argv) <= 0:
+		print "error, first argument should specify where to search for .csv files"
+	searchDirectory = sys.argv[0] # "/Users/michaelshah/Documents/sootDump/"
+
     # Create a file where we will dump our output
 	OverallTable = open(searchDirectory+fileName,'w')
     # Get a list of the directories that we are searching

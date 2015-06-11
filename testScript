@@ -231,10 +231,10 @@ DACAPOBENCHMARKS
 	# Basically appends some Excel formulas to the bottom of the csv
 	# files generated from my Java source, so I do not have to clutter up
 	# that code.
-#	python TableBuilder.py
+#	python TableBuilder.py /Users/michaelshah/Documents/sootDump/
 	
 # (4) Build a massive workbook with everything in it
-#	python OverallTable.py > /Users/michaelshah/Documents/sootDump/_BigTable.csv
+#	python OverallTable.py /Users/michaelshah/Documents/sootDump/ > /Users/michaelshah/Documents/sootDump/_BigTable.csv
 
 
 
